@@ -11,18 +11,19 @@ number_list = [
 
 @web_site.route('/')
 def index():
-	return render_template('index.html')
+  return render_template('index.html')
 
 @web_site.route('/user/', defaults={'username': None})
 @web_site.route('/user/<username>')
 def generate_user(username):
-	if not username:
-		username = request.args.get('username')
+  if not username:
+    username = request.args.get('username')
 
-	if not username:
-		return 'Sorry error something, malformed request.'
+  if not username:
+    username = 'user'
+    #return 'Sorry error something, malformed request.'
 
-	return render_template('personal_user.html', user=username)
+  return render_template('personal_user.html', user=username)
 
 @web_site.route('/page')
 def random_page():
