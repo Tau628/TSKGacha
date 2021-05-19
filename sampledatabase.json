@@ -1,0 +1,3463 @@
+{
+    "characters": [
+        {
+            "image": "None",
+            "name": "Callie",
+            "rarity": 3,
+            "series": "Splatoon",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Marie",
+            "rarity": 3,
+            "series": "Splatoon",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Isabelle",
+            "rarity": 2,
+            "series": "Animal Crossing",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Sable",
+            "rarity": 1,
+            "series": "Animal Crossing",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "L\u2019Abelle",
+            "rarity": 1,
+            "series": "Animal Crossing",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Lola",
+            "rarity": 2,
+            "series": "Looney Tunes",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Maid Marian",
+            "rarity": 2,
+            "series": "Robin Hood",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Robin Hood",
+            "rarity": 3,
+            "series": "Robin Hood",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Nick Wilde",
+            "rarity": 1,
+            "series": "Zootopia",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Judy Hopps",
+            "rarity": 2,
+            "series": "Zootopia",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Nicole Waterson",
+            "rarity": 2,
+            "series": "The Amazing World of Gumball",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Stolas",
+            "rarity": 2,
+            "series": "Helluva Boss",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Retsuko",
+            "rarity": 2,
+            "series": "Aggretsuko",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Pina",
+            "rarity": 1,
+            "series": "Beastars",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Angel Dust",
+            "rarity": 1,
+            "series": "Hazbin Hotel",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Sheriff Mao Mao",
+            "rarity": 2,
+            "series": "Mao Mao: Heroes of Pure Heart",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Fox",
+            "rarity": 2,
+            "series": "Star Fox",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Wolf",
+            "rarity": 2,
+            "series": "Star Fox",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Krystal",
+            "rarity": 1,
+            "series": "Star Fox",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Braxien",
+            "rarity": 3,
+            "series": "Pokemon",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Renamon",
+            "rarity": 1,
+            "series": "Digimon",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Lucario",
+            "rarity": 2,
+            "series": "Pokemon",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Tawna",
+            "rarity": 2,
+            "series": "Crash Bandicoot",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Max",
+            "rarity": 1,
+            "series": "Sam and Max",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Umbreon",
+            "rarity": 2,
+            "series": "Pokemon",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Master Tigress",
+            "rarity": 2,
+            "series": "Kung Fu Panda",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Goblin Girl",
+            "rarity": 1,
+            "series": "Dungeons & Dragons",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Kobold",
+            "rarity": 1,
+            "series": "Dungeons & Dragons",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Husk",
+            "rarity": 2,
+            "series": "Hazbin Hotel",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Coco",
+            "rarity": 1,
+            "series": "Crash Bandicoot",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Rouge",
+            "rarity": 2,
+            "series": "Sonic the Hedgehog",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Blaze",
+            "rarity": 2,
+            "series": "Sonic the Hedgehog",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Raymond",
+            "rarity": 1,
+            "series": "Animal Crossing",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Pearl",
+            "rarity": 1,
+            "series": "Splatoon 2",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Marina",
+            "rarity": 3,
+            "series": "Splatoon 2",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Lopunny",
+            "rarity": 2,
+            "series": "Pokemon",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Ankha",
+            "rarity": 1,
+            "series": "Animal Crossing",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Gadget",
+            "rarity": 1,
+            "series": "Chip n' Dale Rescue Rangers",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Lombax",
+            "rarity": 2,
+            "series": "Ratchet and Clank: Rift Apart",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Asriel",
+            "rarity": 3,
+            "series": "Undertale",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Ralsei",
+            "rarity": 5,
+            "series": "Undertale",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Hariet",
+            "rarity": 1,
+            "series": "Super Mario Odyssey",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Daxter",
+            "rarity": 2,
+            "series": "Jak and Daxter",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Revali",
+            "rarity": 4,
+            "series": "Legend of Zelda: Breath of the Wild",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Sandy Cheeks",
+            "rarity": 1,
+            "series": "Spongebob Squarepants",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Anais Waterson",
+            "rarity": 1,
+            "series": "The Amazing World of Gumball",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Morgana",
+            "rarity": 2,
+            "series": "Persona 5",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Mordecai",
+            "rarity": 3,
+            "series": "Regular Show",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Rigby",
+            "rarity": 3,
+            "series": "Regular Show",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Eileen",
+            "rarity": 3,
+            "series": "Regular Show",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Margaret",
+            "rarity": 2,
+            "series": "Regular Show",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "CJ",
+            "rarity": 3,
+            "series": "Regular Show",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Roxanne",
+            "rarity": 1,
+            "series": "A Goofy Movie",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Panini",
+            "rarity": 1,
+            "series": "Chowder",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Millie",
+            "rarity": 2,
+            "series": "Helluva Boss",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Hornet",
+            "rarity": 2,
+            "series": "Hollow Knight",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Mona",
+            "rarity": 3,
+            "series": "Shovel Knight - Plague of Shadow",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Megara",
+            "rarity": 4,
+            "series": "Hercules",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Opal",
+            "rarity": 2,
+            "series": "Steven Universe",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Blossom",
+            "rarity": 1,
+            "series": "Powerpuff Girls",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Buttercup",
+            "rarity": 1,
+            "series": "Powerpuff Girls",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Bubbles",
+            "rarity": 1,
+            "series": "Powerpuff Girls",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Dendy (OK KO)",
+            "rarity": 1,
+            "series": "OK KO: Let's Be Heroes",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Cosma (OK KO)",
+            "rarity": 1,
+            "series": "OK KO: Let's Be Heroes",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Enid (OK KO)",
+            "rarity": 2,
+            "series": "OK KO: Let's Be Heroes",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Carol (OK KO)",
+            "rarity": 2,
+            "series": "OK KO: Let's Be Heroes",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "She-Ra",
+            "rarity": 3,
+            "series": "She-Ra and the Princesses of Power",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Catra (She-Ra)",
+            "rarity": 2,
+            "series": "She-Ra and the Princesses of Power",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Double Trouble (She-Ra)",
+            "rarity": 2,
+            "series": "She-Ra and the Princesses of Power",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Ashi (Samurai Jack)",
+            "rarity": 3,
+            "series": "Samurai Jack",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Marie Kanker",
+            "rarity": 1,
+            "series": "Ed, Edd n' Eddy",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Lee Kanker",
+            "rarity": 1,
+            "series": "Ed, Edd n' Eddy",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "May Kanker",
+            "rarity": 1,
+            "series": "Ed, Edd n' Eddy",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Numbuh 3",
+            "rarity": 1,
+            "series": "Codename: Kid's Next Door",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Major Doctor Ghastly",
+            "rarity": 1,
+            "series": "Evil Con Carne",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Marshall Lee",
+            "rarity": 2,
+            "series": "Adventure Time",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Flame Princess",
+            "rarity": 3,
+            "series": "Adventure Time",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Fionna",
+            "rarity": 3,
+            "series": "Adventure Time",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Ice Queen",
+            "rarity": 3,
+            "series": "Adventure Time",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Huntress Wizard",
+            "rarity": 3,
+            "series": "Adventure Time",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Jinx",
+            "rarity": 2,
+            "series": "Teen Titans",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Carrie Krueger",
+            "rarity": 1,
+            "series": "The Amazing World of Gumball",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Penny Fitzgerald",
+            "rarity": 1,
+            "series": "The Amazing World of Gumball",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Moxxie",
+            "rarity": 2,
+            "series": "Helluva Boss",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Blitzo",
+            "rarity": 2,
+            "series": "Helluva Boss",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Striker",
+            "rarity": 2,
+            "series": "Helluva Boss",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Trixie Tang",
+            "rarity": 1,
+            "series": "Fairly OddParents",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Amity",
+            "rarity": 1,
+            "series": "The Owl House",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Luz",
+            "rarity": 1,
+            "series": "The Owl House",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Eda",
+            "rarity": 2,
+            "series": "The Owl House",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Mabel Pines",
+            "rarity": 1,
+            "series": "Gravity Falls",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Mrs. Mayberry",
+            "rarity": 2,
+            "series": "Helluva Boss",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Tsuyu",
+            "rarity": 3,
+            "series": "My Hero Academia",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Bubble Girl",
+            "rarity": 4,
+            "series": "My Hero Academia",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Mina Ashido",
+            "rarity": 3,
+            "series": "My Hero Academia",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "ES88",
+            "rarity": 3,
+            "series": "Neurodiver",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Ramona Flowers",
+            "rarity": 3,
+            "series": "Scott Pilgrim vs. The World",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Envy Adams",
+            "rarity": 4,
+            "series": "Scott Pilgrim vs. The World",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Inkling",
+            "rarity": 1,
+            "series": "Splatoon",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Bea",
+            "rarity": 4,
+            "series": "Pokemon",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Peridot",
+            "rarity": 1,
+            "series": "Steven Universe",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Hekapoo",
+            "rarity": 4,
+            "series": "Star vs. the Forces of Evil",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Kim Pines",
+            "rarity": 3,
+            "series": "Scott Pilgrim vs. The World",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "XJ-9",
+            "rarity": 2,
+            "series": "My Life as a Teenage Robot",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Risky Boots",
+            "rarity": 5,
+            "series": "Shantae",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Verosika Mayday",
+            "rarity": 3,
+            "series": "Helluva Boss",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Shego",
+            "rarity": 5,
+            "series": "Kim Possible",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Tarah",
+            "rarity": 3,
+            "series": "Kim Possible",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Bonnie",
+            "rarity": 4,
+            "series": "Kim Possible",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Raven",
+            "rarity": 3,
+            "series": "Teen Titans",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Atom Eve",
+            "rarity": 2,
+            "series": "Invincible",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Shantae",
+            "rarity": 3,
+            "series": "Shantae",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Daisy",
+            "rarity": 3,
+            "series": "Super Mario Land ",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Pyra",
+            "rarity": 2,
+            "series": "Xenoblade Chronicles 2",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Mythra",
+            "rarity": 2,
+            "series": "Xenoblade Chronicles 2",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Lord Dominator",
+            "rarity": 2,
+            "series": "Wander Over Yonder",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Marceline",
+            "rarity": 2,
+            "series": "Adventure Time",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Blue Diamond",
+            "rarity": 1,
+            "series": "Steven Universe",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Toph",
+            "rarity": 2,
+            "series": "Avatar: The Last Airbender",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Azula",
+            "rarity": 4,
+            "series": "Avatar: The Last Airbender",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Suki",
+            "rarity": 3,
+            "series": "Avatar: The Last Airbender",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Courtney",
+            "rarity": 1,
+            "series": "Total Drama Island",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Heather",
+            "rarity": 1,
+            "series": "Total Drama Island",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Gwen",
+            "rarity": 1,
+            "series": "Total Drama Island",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Lindsay",
+            "rarity": 1,
+            "series": "Total Drama Island",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Ryuko",
+            "rarity": 4,
+            "series": "Kill La Kill",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Sallie Mae",
+            "rarity": 1,
+            "series": "Helluva Boss",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Tatsumaki",
+            "rarity": 5,
+            "series": "One Punch Man",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Velma",
+            "rarity": 2,
+            "series": "Scooby Doo",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Satsuki",
+            "rarity": 4,
+            "series": "Kill La Kill",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Gamagoori\u2019s massive throbbing weiner",
+            "rarity": 5,
+            "series": "Kill La Kill",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Mako",
+            "rarity": 3,
+            "series": "Kill La Kill",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Chel",
+            "rarity": 3,
+            "series": "Road to El Dorado",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Clover",
+            "rarity": 2,
+            "series": "Totally Spies",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Alex",
+            "rarity": 1,
+            "series": "Totally Spies",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Sam",
+            "rarity": 1,
+            "series": "Totally Spies",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Poison",
+            "rarity": 3,
+            "series": "Final Fight",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Brigette",
+            "rarity": 2,
+            "series": "Overwatch",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Miruko",
+            "rarity": 5,
+            "series": "My Hero Academia",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Ty Lee",
+            "rarity": 3,
+            "series": "Avatar: The Last Airbender",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Mai Shiranui",
+            "rarity": 5,
+            "series": "King of Fighters",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Lapis Lazuli",
+            "rarity": 1,
+            "series": "Steven Universe",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Jasper",
+            "rarity": 1,
+            "series": "Steven Universe",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Princess Daphne",
+            "rarity": 2,
+            "series": "Dragon's Lair",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Elastigirl",
+            "rarity": 3,
+            "series": "The Incredibles",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Gaz",
+            "rarity": 1,
+            "series": "Invader Zim",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Wendy",
+            "rarity": 1,
+            "series": "Gravity Falls",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Tifa",
+            "rarity": 4,
+            "series": "Final Fantasy VII",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Aqua",
+            "rarity": 3,
+            "series": "Kingdom Hearts",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Kawakami",
+            "rarity": 3,
+            "series": "Persona 5",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Makoto Nijima",
+            "rarity": 5,
+            "series": "Persona 5",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Lady",
+            "rarity": 4,
+            "series": "Devil May Cry",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Makoto",
+            "rarity": 3,
+            "series": "Street Fighter",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Cammy",
+            "rarity": 3,
+            "series": "Street Fighter",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Fem Seth",
+            "rarity": 5,
+            "series": "Street Fighter",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Ibuki",
+            "rarity": 3,
+            "series": "Street Fighter",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Haru Okumura",
+            "rarity": 4,
+            "series": "Persona 5",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Futaba Sakura",
+            "rarity": 3,
+            "series": "Persona 5",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Sae Nijima",
+            "rarity": 5,
+            "series": "Persona 5",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Sumire",
+            "rarity": 3,
+            "series": "Persona 5 Royal",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Lavenza",
+            "rarity": 4,
+            "series": "Persona 5 ",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Elizabeth",
+            "rarity": 5,
+            "series": "Persona 3",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Tae Takemi",
+            "rarity": 4,
+            "series": "Persona 5",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Scathach",
+            "rarity": 2,
+            "series": "Persona 5",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Fem Terry",
+            "rarity": 4,
+            "series": "King of Fighters",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Android 21",
+            "rarity": 5,
+            "series": "Dragon Ball FighterZ",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Undyne",
+            "rarity": 2,
+            "series": "Undertale",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Juri Han",
+            "rarity": 4,
+            "series": "Street Fighter",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Chun-Li",
+            "rarity": 4,
+            "series": "Street Fighter",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Nejire",
+            "rarity": 3,
+            "series": "My Hero Academia",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Harley Quinn",
+            "rarity": 3,
+            "series": "Harley Quinn Animated Series",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Lust",
+            "rarity": 4,
+            "series": "Fullmetal Alchemist",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "The Major",
+            "rarity": 4,
+            "series": "Ghost in the Shell",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Zelda",
+            "rarity": 3,
+            "series": "Legend of Zelda: Breath of the Wild",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Zelda",
+            "rarity": 3,
+            "series": "Legend of Zelda: A Link to the Past",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Wendy\u2019s Girl",
+            "rarity": 2,
+            "series": "Wendy's",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Camie",
+            "rarity": 5,
+            "series": "My Hero Academia",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Mavis",
+            "rarity": 1,
+            "series": "Hotel Transylvania",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Fujiko Mine",
+            "rarity": 3,
+            "series": "Lupin the III",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Fred Fuchs",
+            "rarity": 1,
+            "series": "Bram Stroker's Blacula",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Kitana",
+            "rarity": 2,
+            "series": "Mortal Kombat",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Filia",
+            "rarity": 2,
+            "series": "Skullgirls",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Fukua",
+            "rarity": 3,
+            "series": "Skullgirls",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Eliza",
+            "rarity": 5,
+            "series": "Skullgirls",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Cerebella",
+            "rarity": 3,
+            "series": "Skullgirls",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Minette",
+            "rarity": 2,
+            "series": "Skullgirls",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Selene Contiello",
+            "rarity": 3,
+            "series": "Skullgirls",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Feng",
+            "rarity": 2,
+            "series": "Skullgirls",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Beatrix",
+            "rarity": 2,
+            "series": "Skullgirls",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Parasoul",
+            "rarity": 3,
+            "series": "Skullgirls",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Ms. Fortune",
+            "rarity": 3,
+            "series": "Skullgirls",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Valentine",
+            "rarity": 4,
+            "series": "Skullgirls",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Squigly",
+            "rarity": 4,
+            "series": "Skullgirls",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Lucifer",
+            "rarity": 3,
+            "series": "Helltaker",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Justice",
+            "rarity": 3,
+            "series": "Helltaker",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Modeus",
+            "rarity": 4,
+            "series": "Helltaker",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Judgment",
+            "rarity": 5,
+            "series": "Helltaker",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Azazel",
+            "rarity": 3,
+            "series": "Helltaker",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Lilith",
+            "rarity": 1,
+            "series": "Hazbin Hotel",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Baxter",
+            "rarity": 1,
+            "series": "Hazbin Hotel",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Morrigan",
+            "rarity": 5,
+            "series": "Darkstalker",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Q-Bee",
+            "rarity": 4,
+            "series": "Darkstalker",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Lilith",
+            "rarity": 3,
+            "series": "Darkstalkers",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Travis",
+            "rarity": 1,
+            "series": "Hazbin Hotel",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Rosalina (and Luma)",
+            "rarity": 2,
+            "series": "Super Mario Galaxy",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Megumin",
+            "rarity": 3,
+            "series": "Konosuba",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Darkness",
+            "rarity": 2,
+            "series": "Konosuba",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Aqua",
+            "rarity": 2,
+            "series": "Konosuba",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Rise",
+            "rarity": 3,
+            "series": "Persona 4",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Marie",
+            "rarity": 2,
+            "series": "Persona 4 Golden",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Uzaki-chan",
+            "rarity": 1,
+            "series": "Uzaki-chan Wants to Hang Out",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Palutena",
+            "rarity": 4,
+            "series": "Kid Icarus",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Viridi",
+            "rarity": 2,
+            "series": "Kid Icarus",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Medusa",
+            "rarity": 3,
+            "series": "Kid Icarus",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Female Geese Howard",
+            "rarity": 4,
+            "series": "King of Fighters",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "A.B.A.",
+            "rarity": 3,
+            "series": "Guilty Gear",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Baiken",
+            "rarity": 5,
+            "series": "Guilty Gear",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Hsien-Ko",
+            "rarity": 4,
+            "series": "Darkstalkers",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Ruby Heart",
+            "rarity": 3,
+            "series": "Marvel vs. Capcom 2",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Jin",
+            "rarity": 1,
+            "series": "Marvel vs. Capcom 2",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Tron Bonne",
+            "rarity": 2,
+            "series": "Marvel vs. Capcom 2",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Psylocke",
+            "rarity": 3,
+            "series": "X-Men",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Storm",
+            "rarity": 2,
+            "series": "X-Men",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Rogue",
+            "rarity": 2,
+            "series": "X-Men",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Scanty",
+            "rarity": 3,
+            "series": "Panty and Stocking",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Kneesocks",
+            "rarity": 3,
+            "series": "Panty and Stocking",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Fubuki",
+            "rarity": 3,
+            "series": "One Punch Man",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Mosquito Girl",
+            "rarity": 2,
+            "series": "One Punch Man",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Ikumo Mito",
+            "rarity": 3,
+            "series": "Shokugeki no Soma",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Tomoko",
+            "rarity": 1,
+            "series": "Watamote",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Zero-Two",
+            "rarity": 4,
+            "series": "Darling in the Franxx",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Lio Fotia",
+            "rarity": 2,
+            "series": "Promare",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Bowsette",
+            "rarity": 3,
+            "series": "Super Mario Bros. Quest for the Golden Shpunkle",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Boosette",
+            "rarity": 4,
+            "series": "Super Mario Sunshine 2: Tax Evasion Has Consequences",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Ashley",
+            "rarity": 2,
+            "series": "WarioWare",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Ann Takamaki",
+            "rarity": 3,
+            "series": "Persona 5",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Lahla",
+            "rarity": 2,
+            "series": "Paper Mario: The Thousand Year Door",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Vivian",
+            "rarity": 2,
+            "series": "Paper Mario: The Thousand Year Door",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Shermie",
+            "rarity": 4,
+            "series": "King of Fighters",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Jess Meas",
+            "rarity": 2,
+            "series": "2064: Read Only Memories",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Lexi Rivers",
+            "rarity": 2,
+            "series": "2064: Read Only Memories",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "TOMCAT",
+            "rarity": 2,
+            "series": "2064: Read Only Memories",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Captain Syrup",
+            "rarity": 2,
+            "series": "Wario Land: Super Mario Land 3",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Fire Keeper",
+            "rarity": 2,
+            "series": "Dark Souls 3",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Emerald Herald",
+            "rarity": 1,
+            "series": "Dark Souls 2: Scholar of the First Sin",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Cynthia",
+            "rarity": 5,
+            "series": "Pokemon",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Midna",
+            "rarity": 3,
+            "series": "Legend of Zelda: Twilight Princess",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Fio",
+            "rarity": 4,
+            "series": "Metal Slug 2",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Sucy",
+            "rarity": 3,
+            "series": "Little Witch Academia",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Muffet",
+            "rarity": 1,
+            "series": "Undertale",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Maya Fey",
+            "rarity": 2,
+            "series": "Phoenix Wright",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Mariah",
+            "rarity": 3,
+            "series": "Jojo's Bizarre Adventure: Stardust Crusader",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Thief",
+            "rarity": 3,
+            "series": "D&D Shadow Over Mystara",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Elf",
+            "rarity": 3,
+            "series": "D&D Shadow Over Mystara",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Toko",
+            "rarity": 1,
+            "series": "Danganronpa",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Akane",
+            "rarity": 3,
+            "series": "Danganronpa",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Aoi",
+            "rarity": 2,
+            "series": "Danganronpa",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Kumatora",
+            "rarity": 2,
+            "series": "Mother 3",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Princess Mipha",
+            "rarity": 3,
+            "series": "Legend of Zelda: Breath of the Wild",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Shadow Queen Peach",
+            "rarity": 4,
+            "series": "Paper Mario: The Thousand Year Door",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Beruka",
+            "rarity": 2,
+            "series": "Fire Emblem: Fates",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Pitou",
+            "rarity": 4,
+            "series": "Hunter X Hunter",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "R. Mika",
+            "rarity": 3,
+            "series": "Street Fighter Alpha 3",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Sakura",
+            "rarity": 3,
+            "series": "Street Fighter Alpha 2",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Mordred",
+            "rarity": 2,
+            "series": "Fate: Grand Order",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Rottytops",
+            "rarity": 2,
+            "series": "Shantae",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Sky",
+            "rarity": 2,
+            "series": "Shantae",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Sypha",
+            "rarity": 3,
+            "series": "Castlevania 3",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Shield Knight",
+            "rarity": 2,
+            "series": "Shovel Knight",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "The Enchantress",
+            "rarity": 4,
+            "series": "Shovel Knight",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Twintelle",
+            "rarity": 3,
+            "series": "ARMS",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Zeena",
+            "rarity": 1,
+            "series": "Sonic Lost World",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "R. Dorothy Wayneright",
+            "rarity": 4,
+            "series": "The Big O",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Sophia",
+            "rarity": 2,
+            "series": "Persona 5 Strikers",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Cindy Aurum",
+            "rarity": 3,
+            "series": "Final Fantasy XV",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "The President",
+            "rarity": 5,
+            "series": "Prison School",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Madam Vice President",
+            "rarity": 3,
+            "series": "Prison School",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Chiyo",
+            "rarity": 2,
+            "series": "Prison School",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Kate",
+            "rarity": 2,
+            "series": "Prison School",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Malina",
+            "rarity": 2,
+            "series": "Emperor's New School",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Passionlip",
+            "rarity": 2,
+            "series": "Fate: Grand Order",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Desiree",
+            "rarity": 3,
+            "series": "Danny Phantom",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Hilda",
+            "rarity": 3,
+            "series": "Under Night",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Saint Martha",
+            "rarity": 2,
+            "series": "Fate: Grand Order",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Iris",
+            "rarity": 3,
+            "series": "Fire Force",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Jean Grey",
+            "rarity": 2,
+            "series": "X-Men",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Jeanne d\u2019Arc",
+            "rarity": 2,
+            "series": "Fate: Grand Order",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Nine",
+            "rarity": 4,
+            "series": "Blazblue",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Shuten Doji",
+            "rarity": 1,
+            "series": "Fate: Grand Order",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Xuanzang Sanzang",
+            "rarity": 1,
+            "series": "Fate: Grand Order",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Giovanna",
+            "rarity": 3,
+            "series": "Guilty Gear",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Star",
+            "rarity": 1,
+            "series": "Star vs. the Forces of Evil",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Ahsoka Tano",
+            "rarity": 2,
+            "series": "Star Wars: The Clone Wars",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Queen Tyr'ahnee",
+            "rarity": 3,
+            "series": "Duck Dodgers and the 24(1/2) Century",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Eclipsa Butterfly",
+            "rarity": 2,
+            "series": "Star vs. the Forces of Evil",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Francis Drake",
+            "rarity": 3,
+            "series": "Fate: Grand Order",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Mitsuru",
+            "rarity": 5,
+            "series": "Persona 3",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Fuuka",
+            "rarity": 2,
+            "series": "Persona 3",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Aigis",
+            "rarity": 4,
+            "series": "Persona 3",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Menat",
+            "rarity": 3,
+            "series": "Street Fighter V",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Rose",
+            "rarity": 4,
+            "series": "Street Fighter",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Quetzalcoatl - Santa",
+            "rarity": 2,
+            "series": "Fate: Grand Order",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "C. Viper",
+            "rarity": 2,
+            "series": "Street Fighter",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Sesshoin Kiara - Nun",
+            "rarity": 2,
+            "series": "Fate: Grand Order",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Queen of Sheba",
+            "rarity": 2,
+            "series": "Fate: Grand Order",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Hassan of Serentiy",
+            "rarity": 1,
+            "series": "Fate: Grand Order",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Alice Twilight",
+            "rarity": 2,
+            "series": "No More Heroes 2",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Jessie Rasberry",
+            "rarity": 3,
+            "series": "Final Fantasy VII",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Strider Hiryu",
+            "rarity": 2,
+            "series": "Strider",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Raiden",
+            "rarity": 2,
+            "series": "Metal Gear Solid",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Shinobu Jacobs",
+            "rarity": 4,
+            "series": "No More Heroes",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Shoebill",
+            "rarity": 3,
+            "series": "Kemono Friends",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Fu",
+            "rarity": 3,
+            "series": "No More Heroes 3",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Jeane",
+            "rarity": 3,
+            "series": "No More Heroes",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Dr. Naomi",
+            "rarity": 2,
+            "series": "No More Heroes",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Bayonetta",
+            "rarity": 5,
+            "series": "Bayonetta 1/2",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Colette",
+            "rarity": 1,
+            "series": "Brawl Stars",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Gogo Tomago",
+            "rarity": 2,
+            "series": "Big Hero 6",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Naoto Shirogane",
+            "rarity": 3,
+            "series": "Persona 4",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Joker",
+            "rarity": 2,
+            "series": "Persona 5",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Goro Akechi",
+            "rarity": 3,
+            "series": "Persona 5",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Daidouji",
+            "rarity": 2,
+            "series": "Senran Kagura 2",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Misato Katsuragi",
+            "rarity": 1,
+            "series": "Neon Genesis Evangelion",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Asuka Langley Soryu",
+            "rarity": 4,
+            "series": "Neon Genesis Evangelion",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "King",
+            "rarity": 3,
+            "series": "King of Fighters",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Athena",
+            "rarity": 3,
+            "series": "Psycho Soldier",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Asuka Kazama",
+            "rarity": 2,
+            "series": "Tekken",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Yoko Littner",
+            "rarity": 5,
+            "series": "Gurren Lagan",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Nia Teppelin",
+            "rarity": 4,
+            "series": "Gurren Lagan",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Kinon Bachika",
+            "rarity": 2,
+            "series": "Gurren Lagan",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Spider-Gwen",
+            "rarity": 3,
+            "series": "Spider-Man: Into the Spiderverse",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Massachusetts",
+            "rarity": 2,
+            "series": "Azur Lane",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Baltimore",
+            "rarity": 1,
+            "series": "Azur Lane",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Olli",
+            "rarity": 1,
+            "series": "Braeburned",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Kii",
+            "rarity": 1,
+            "series": "Azur Lane",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Honolulu",
+            "rarity": 1,
+            "series": "Azur Lane",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Jamaica",
+            "rarity": 2,
+            "series": "Azur Lane",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Jolyne Cujoh",
+            "rarity": 3,
+            "series": "Jojo's Bizarre Adventure: Stone Ocean",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Kei Nijimura",
+            "rarity": 3,
+            "series": "Jojo's Bizarre Adventure: Jojolion",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Trish Una",
+            "rarity": 4,
+            "series": "Jojo's Bizarre Adventure: Vento Aureo",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Elizabeth (Corset)",
+            "rarity": 2,
+            "series": "Bioshock Infinite",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Tali",
+            "rarity": 1,
+            "series": "Mass Effect",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Angewoman",
+            "rarity": 2,
+            "series": "Digimon",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Succubus",
+            "rarity": 3,
+            "series": "Persona 5",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Arsene",
+            "rarity": 5,
+            "series": "Persona 5",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Lamia",
+            "rarity": 2,
+            "series": "Persona 5",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Skadi",
+            "rarity": 2,
+            "series": "Persona 5",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Baal",
+            "rarity": 1,
+            "series": "Persona 5",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Metaton EX",
+            "rarity": 1,
+            "series": "Undertale",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Metaton ",
+            "rarity": 1,
+            "series": "Undertale",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Metaton Neo",
+            "rarity": 2,
+            "series": "Underboob",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Suzy ",
+            "rarity": 1,
+            "series": "Deltarune",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Clotho",
+            "rarity": 2,
+            "series": "Persona 5",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Labrys",
+            "rarity": 3,
+            "series": "Persona 4 Arena",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Metis",
+            "rarity": 4,
+            "series": "Persona 3",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Atropos",
+            "rarity": 2,
+            "series": "Persona 5",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Lilim",
+            "rarity": 1,
+            "series": "Persona 5",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Duna",
+            "rarity": 2,
+            "series": "Fossil Fighters",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Mui",
+            "rarity": 1,
+            "series": "Epic Seven",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Vivian",
+            "rarity": 2,
+            "series": "Epic Seven",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Elphelt",
+            "rarity": 4,
+            "series": "Guilty Gear",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Saane",
+            "rarity": 3,
+            "series": "Monster Musume",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Leechi",
+            "rarity": 2,
+            "series": "Monster Musume",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Octo",
+            "rarity": 1,
+            "series": "Monster Musume",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Zombina",
+            "rarity": 3,
+            "series": "Monster Musume",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Mei Hatsume",
+            "rarity": 4,
+            "series": "My Hero Academia",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Tohru",
+            "rarity": 3,
+            "series": "Miss Kobayashi's Dragon Maid",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Lucoa",
+            "rarity": 3,
+            "series": "Miss Kobayashi's Dragon Maid",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Mt. Lady",
+            "rarity": 2,
+            "series": "My Hero Academia",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Mitsuki Bakugo",
+            "rarity": 3,
+            "series": "My Hero Academia",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Elora",
+            "rarity": 1,
+            "series": "Spyro the Dragon",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Lucy",
+            "rarity": 1,
+            "series": "Pokemon",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Skyla ",
+            "rarity": 2,
+            "series": "Pokemon",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Meru the Succubus",
+            "rarity": 5,
+            "series": "Skuddbutt",
+            "suggested_by": "None"
+        },
+        {
+            "image": "None",
+            "name": "Phosphora",
+            "rarity": 3,
+            "series": "Kid Icarus",
+            "suggested_by": "None"
+        },
+        {
+            "name": "Big Band",
+            "rarity": "2",
+            "series": "Skullgirls",
+            "suggested_by": "7588"
+        },
+        {
+            "name": "Bowser",
+            "rarity": "rejected",
+            "series": "Super Mario",
+            "suggested_by": "2218"
+        },
+        {
+            "name": "Paper",
+            "rarity": "rejected",
+            "series": "Mario",
+            "suggested_by": "2218"
+        },
+        {
+            "name": "Paper Mario Bowser",
+            "rarity": "2",
+            "series": "Super Paper Mario",
+            "suggested_by": "2218"
+        },
+        {
+            "name": "Duo",
+            "rarity": "5",
+            "series": "Duolingo",
+            "suggested_by": "7588"
+        },
+        {
+            "name": "Plankton",
+            "rarity": "rejected",
+            "series": "Spongebob Squarepants",
+            "suggested_by": "2218"
+        },
+        {
+            "name": "Peter Griffin",
+            "rarity": "rejected",
+            "series": "Family Guy",
+            "suggested_by": "2218"
+        },
+        {
+            "name": "Handsome Squidward",
+            "rarity": "rejected",
+            "series": "Spongebob Squarepants",
+            "suggested_by": "2218"
+        },
+        {
+            "name": "Zagreus",
+            "rarity": "2",
+            "series": "Hades",
+            "suggested_by": "4946"
+        },
+        {
+            "name": "Rayla",
+            "rarity": "3",
+            "series": "Dragon Prince",
+            "suggested_by": "4946"
+        },
+        {
+            "name": "Callum",
+            "rarity": "rejected",
+            "series": "Dragon Prince",
+            "suggested_by": "4946"
+        },
+        {
+            "name": "Jill",
+            "rarity": "rejected",
+            "series": "Valentine",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Jill",
+            "rarity": "rejected",
+            "series": "Resident Evil",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Jill Valentine",
+            "rarity": "3",
+            "series": "Resident Evil",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Jill Valentine",
+            "rarity": "rejected",
+            "series": "Resident Evil",
+            "suggested_by": "3475"
+        },
+        {
+            "name": "big chungus",
+            "rarity": "rejected",
+            "series": "the bush",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Erina Nakiri",
+            "rarity": "2",
+            "series": "Food Wars",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Alice Nakiri",
+            "rarity": "3",
+            "series": "Food Wars",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Funky Student",
+            "rarity": "rejected",
+            "series": "Persona 4",
+            "suggested_by": "7572"
+        },
+        {
+            "name": "Shadow Sae",
+            "rarity": "5",
+            "series": "Persona 5",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Monke",
+            "rarity": "rejected",
+            "series": "Real Life",
+            "suggested_by": "7572"
+        },
+        {
+            "name": "Hifumi Togo",
+            "rarity": "3",
+            "series": "Persona 5",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Minkus",
+            "rarity": "rejected",
+            "series": "Boy Meets World",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Tohru Adachi",
+            "rarity": "3",
+            "series": "Persona 4",
+            "suggested_by": "3437"
+        },
+        {
+            "name": "Velma",
+            "rarity": "rejected",
+            "series": "Scooby Doo",
+            "suggested_by": "2218"
+        },
+        {
+            "name": "Daphne Blake",
+            "rarity": "1",
+            "series": "Scooby Doo",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Raymond Barone",
+            "rarity": "rejected",
+            "series": "Everyone loves Raymond",
+            "suggested_by": "5821"
+        },
+        {
+            "name": "Biggie Smalls",
+            "rarity": "rejected",
+            "series": "West Coast rapper",
+            "suggested_by": "5821"
+        },
+        {
+            "name": "Tupac",
+            "rarity": "rejected",
+            "series": "Black Jesus",
+            "suggested_by": "5821"
+        },
+        {
+            "name": "yung gravy",
+            "rarity": "rejected",
+            "series": "Lil Steamer",
+            "suggested_by": "5821"
+        },
+        {
+            "name": "George Jenkins",
+            "rarity": "rejected",
+            "series": "Publix",
+            "suggested_by": "2218"
+        },
+        {
+            "name": "Dexters Mom",
+            "rarity": "2",
+            "series": "Dexters Lab",
+            "suggested_by": "7064"
+        },
+        {
+            "name": "Rita Repulsa",
+            "rarity": "rejected",
+            "series": "Power Rangers",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "George Jenkins",
+            "rarity": "rejected",
+            "series": "Publix",
+            "suggested_by": "2218"
+        },
+        {
+            "name": "george cankles",
+            "rarity": "5",
+            "series": "Publix 2: The Return",
+            "suggested_by": "3437"
+        },
+        {
+            "name": "Ultimate Social Justice Warrior Frieza",
+            "rarity": "rejected",
+            "series": "DBZ",
+            "suggested_by": "5821"
+        },
+        {
+            "name": "Roxxy",
+            "rarity": "rejected",
+            "series": "Summertime Saga",
+            "suggested_by": "7572"
+        },
+        {
+            "name": "Eve",
+            "rarity": "rejected",
+            "series": "Summertime Saga",
+            "suggested_by": "7572"
+        },
+        {
+            "name": "I like dick if I reject this",
+            "rarity": "rejected",
+            "series": "Gottem",
+            "suggested_by": "2218"
+        },
+        {
+            "name": "kitty pryde",
+            "rarity": "rejected",
+            "series": "X-men",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Faye Valentine",
+            "rarity": "3",
+            "series": "Cowboy Bebop",
+            "suggested_by": "7064"
+        },
+        {
+            "name": "Zatanna",
+            "rarity": "2",
+            "series": "DC",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "monkey",
+            "rarity": "rejected",
+            "series": "NA",
+            "suggested_by": "7805"
+        },
+        {
+            "name": "Freshman Evan",
+            "rarity": "rejected",
+            "series": "chlamydia",
+            "suggested_by": "7805"
+        },
+        {
+            "name": "Sophomore Evan",
+            "rarity": "rejected",
+            "series": "perspiration",
+            "suggested_by": "7805"
+        },
+        {
+            "name": "Junior Evan",
+            "rarity": "rejected",
+            "series": "boon zone",
+            "suggested_by": "7805"
+        },
+        {
+            "name": "Senior Evan",
+            "rarity": "rejected",
+            "series": "Bevin",
+            "suggested_by": "7805"
+        },
+        {
+            "name": "Cu",
+            "rarity": "rejected",
+            "series": "like comon cu",
+            "suggested_by": "7805"
+        },
+        {
+            "name": "K",
+            "rarity": "rejected",
+            "series": "the edric is silent",
+            "suggested_by": "7805"
+        },
+        {
+            "name": "Uncle RUkuS",
+            "rarity": "rejected",
+            "series": "bubkus",
+            "suggested_by": "7805"
+        },
+        {
+            "name": "biGshaq",
+            "rarity": "rejected",
+            "series": "asnee",
+            "suggested_by": "7805"
+        },
+        {
+            "name": "semen Harrison",
+            "rarity": "rejected",
+            "series": "its real frosty!",
+            "suggested_by": "7805"
+        },
+        {
+            "name": "Shiki",
+            "rarity": "rejected",
+            "series": "Garden",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "miles",
+            "rarity": "rejected",
+            "series": "faceless bich",
+            "suggested_by": "7805"
+        },
+        {
+            "name": "myles",
+            "rarity": "rejected",
+            "series": "built tuff",
+            "suggested_by": "7805"
+        },
+        {
+            "name": "Shiki",
+            "rarity": "2",
+            "series": "Garden of Sinners",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "hero",
+            "rarity": "rejected",
+            "series": "garb teir",
+            "suggested_by": "7805"
+        },
+        {
+            "name": "israel",
+            "rarity": "rejected",
+            "series": "Satan worshipers",
+            "suggested_by": "7805"
+        },
+        {
+            "name": "Nicc",
+            "rarity": "rejected",
+            "series": "extra thicc",
+            "suggested_by": "7805"
+        },
+        {
+            "name": "Wiz",
+            "rarity": "3",
+            "series": "Konosuba",
+            "suggested_by": "7572"
+        },
+        {
+            "name": "miles",
+            "rarity": "rejected",
+            "series": "wrong unit",
+            "suggested_by": "7805"
+        },
+        {
+            "name": "miles",
+            "rarity": "rejected",
+            "series": " lame unit",
+            "suggested_by": "7805"
+        },
+        {
+            "name": "Yuffie",
+            "rarity": "rejected",
+            "series": "Final Fantasy VII",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "spiritofthu",
+            "rarity": "rejected",
+            "series": "cumrag",
+            "suggested_by": "7805"
+        },
+        {
+            "name": "Lucina",
+            "rarity": "rejected",
+            "series": "Fire Emblem",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "lucina",
+            "rarity": "rejected",
+            "series": "queen",
+            "suggested_by": "7805"
+        },
+        {
+            "name": "robin",
+            "rarity": "rejected",
+            "series": "the feh one",
+            "suggested_by": "7805"
+        },
+        {
+            "name": "Tsunade",
+            "rarity": "2",
+            "series": "Naruto",
+            "suggested_by": "7572"
+        },
+        {
+            "name": "ike",
+            "rarity": "rejected",
+            "series": "its that boi",
+            "suggested_by": "7805"
+        },
+        {
+            "name": "byleth",
+            "rarity": "rejected",
+            "series": "sickchar",
+            "suggested_by": "7805"
+        },
+        {
+            "name": "marth",
+            "rarity": "rejected",
+            "series": "a",
+            "suggested_by": "7805"
+        },
+        {
+            "name": "Karin Kanzuki",
+            "rarity": "2",
+            "series": "Street Fighter 5",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Kitty",
+            "rarity": "rejected",
+            "series": "Danx",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Millia Rage",
+            "rarity": "3",
+            "series": "Guilty Gear",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Thorn",
+            "rarity": "2",
+            "series": "Scooby Doo",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Gwenpool",
+            "rarity": "3",
+            "series": "Marvel",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Jimmy's Mom",
+            "rarity": "rejected",
+            "series": "Jimmy Neutron",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Mandy",
+            "rarity": "rejected",
+            "series": "Totally Spies",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Nikki",
+            "rarity": "rejected",
+            "series": "6Teen",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Jen Masterson",
+            "rarity": "rejected",
+            "series": "6Teen",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "April O'Neil",
+            "rarity": "rejected",
+            "series": "Teenage Mutant Ninja Turtles",
+            "suggested_by": "4946"
+        },
+        {
+            "name": "Lynn Minmay",
+            "rarity": "4",
+            "series": "Super Dimension Fortress Macross ",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "I-No",
+            "rarity": "5",
+            "series": "Guilty Gear",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Cassandra Cage",
+            "rarity": "pending",
+            "series": "Batman",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Cassie Cage",
+            "rarity": "pending",
+            "series": "Mortal Kombat",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Lucy Steel",
+            "rarity": "1",
+            "series": "Jojo's Bizarre Adventure: Steel Ball Run",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Jeanne d'Arc Alter",
+            "rarity": "pending",
+            "series": "Fate Grand Order",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Rin Toshka",
+            "rarity": "pending",
+            "series": "Fate",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Bob Saget",
+            "rarity": "pending",
+            "series": "Full House",
+            "suggested_by": "8625"
+        },
+        {
+            "name": "Esdeath",
+            "rarity": "pending",
+            "series": "Akame Ga Kill",
+            "suggested_by": "8625"
+        }
+    ],
+    "players": {
+        "2218": {
+            "coins": 0,
+            "max_roster": 3,
+            "name": "agracyalny",
+            "roster": [
+                202,
+                174,
+                187
+            ]
+        },
+        "3437": {
+            "coins": 0,
+            "max_roster": 3,
+            "name": "majormoisture",
+            "roster": [
+                126,
+                318,
+                246
+            ]
+        },
+        "3475": {
+            "coins": 1,
+            "max_roster": 3,
+            "name": "SpiritOfThuggery",
+            "roster": [
+                237,
+                219,
+                225
+            ]
+        },
+        "4946": {
+            "coins": 3,
+            "max_roster": 3,
+            "name": "Tau628",
+            "roster": [
+                110,
+                372,
+                85
+            ]
+        },
+        "5821": {
+            "coins": 2,
+            "max_roster": 3,
+            "name": "Just the tip",
+            "roster": [
+                357,
+                163,
+                107
+            ]
+        },
+        "7064": {
+            "coins": 0,
+            "max_roster": 3,
+            "name": "Cucklton",
+            "roster": [
+                368,
+                5,
+                244
+            ]
+        },
+        "7281": {
+            "coins": 0,
+            "max_roster": 3,
+            "name": "lakshme",
+            "roster": [
+                327,
+                48,
+                3
+            ]
+        },
+        "7572": {
+            "coins": 1,
+            "max_roster": 3,
+            "name": "Nick",
+            "roster": [
+                207,
+                228,
+                139
+            ]
+        },
+        "7588": {
+            "coins": 0,
+            "max_roster": 3,
+            "name": "sammichs",
+            "roster": [
+                181,
+                292,
+                11
+            ]
+        },
+        "7805": {
+            "coins": 0,
+            "max_roster": 3,
+            "name": "Dovax",
+            "roster": [
+                182,
+                173,
+                144
+            ]
+        },
+        "8044": {
+            "coins": 9,
+            "max_roster": 3,
+            "name": "EagleBirdman",
+            "roster": [
+                146
+            ]
+        },
+        "8625": {
+            "coins": 1,
+            "max_roster": 3,
+            "name": "Firered410",
+            "roster": [
+                120,
+                108,
+                287
+            ]
+        }
+    },
+    "rarity_names": {
+        "1": "Supremely Minkus",
+        "2": "Cringe",
+        "3": "Nonplussed",
+        "4": "Based and Redpilled",
+        "5": "Fully Pogged",
+        "pending": "pending",
+        "rejected": "rejected"
+    },
+    "rates": {
+        "1": 40,
+        "2": 30,
+        "3": 20,
+        "4": 7,
+        "5": 3
+    },
+    "starting_coins": 10,
+    "starting_roster_size": 3,
+    "trades": [
+        {
+            "giving": 157,
+            "instigator": "8625",
+            "partner": null,
+            "receiving": 182,
+            "status": "complete"
+        },
+        {
+            "giving": 11,
+            "instigator": "7588",
+            "partner": null,
+            "receiving": 181,
+            "status": "complete"
+        },
+        {
+            "giving": 6,
+            "instigator": "4946",
+            "partner": "2218",
+            "receiving": 11,
+            "status": "revoked"
+        },
+        {
+            "giving": 1,
+            "instigator": "4946",
+            "partner": null,
+            "receiving": 2,
+            "status": "revoked"
+        },
+        {
+            "giving": 1,
+            "instigator": "4946",
+            "partner": "2222",
+            "receiving": 2,
+            "status": "revoked"
+        },
+        {
+            "giving": 1,
+            "instigator": "4946",
+            "partner": "2222",
+            "receiving": 2,
+            "status": "revoked"
+        },
+        {
+            "giving": 1,
+            "instigator": "4946",
+            "partner": "4946",
+            "receiving": 2,
+            "status": "revoked"
+        },
+        {
+            "giving": 1,
+            "instigator": "4946",
+            "partner": "4946",
+            "receiving": 2,
+            "status": "revoked"
+        },
+        {
+            "giving": 6,
+            "instigator": "4946",
+            "partner": "2218",
+            "receiving": 11,
+            "status": "complete"
+        },
+        {
+            "giving": 11,
+            "instigator": "4946",
+            "partner": null,
+            "receiving": 88,
+            "status": "complete"
+        },
+        {
+            "giving": 11,
+            "instigator": "4946",
+            "partner": null,
+            "receiving": 89,
+            "status": "revoked"
+        },
+        {
+            "giving": 368,
+            "instigator": "4946",
+            "partner": null,
+            "receiving": 110,
+            "status": "complete"
+        },
+        {
+            "giving": 368,
+            "instigator": "7572",
+            "partner": null,
+            "receiving": 207,
+            "status": "complete"
+        },
+        {
+            "giving": 5,
+            "instigator": "7281",
+            "partner": null,
+            "receiving": 368,
+            "status": "incomplete"
+        },
+        {
+            "giving": 5,
+            "instigator": "7064",
+            "partner": null,
+            "receiving": 368,
+            "status": "incomplete"
+        },
+        {
+            "giving": 45,
+            "instigator": "7064",
+            "partner": null,
+            "receiving": 368,
+            "status": "complete"
+        },
+        {
+            "giving": 282,
+            "instigator": "8625",
+            "partner": null,
+            "receiving": 228,
+            "status": "complete"
+        },
+        {
+            "giving": 228,
+            "instigator": "8625",
+            "partner": null,
+            "receiving": 120,
+            "status": "complete"
+        },
+        {
+            "giving": 163,
+            "instigator": "3475",
+            "partner": null,
+            "receiving": 225,
+            "status": "complete"
+        },
+        {
+            "giving": 182,
+            "instigator": "8625",
+            "partner": null,
+            "receiving": 108,
+            "status": "complete"
+        },
+        {
+            "giving": 85,
+            "instigator": "4946",
+            "partner": null,
+            "receiving": 175,
+            "status": "revoked"
+        },
+        {
+            "giving": 237,
+            "instigator": "3437",
+            "partner": null,
+            "receiving": 126,
+            "status": "complete"
+        }
+    ]
+}
