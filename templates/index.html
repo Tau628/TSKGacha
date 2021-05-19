@@ -1,32 +1,8 @@
-<!DOCTYPE HTML>
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
 
-<html>
-	<head>
-		<title>Flask Template</title>
-    <style>
-      form {
-        margin: 0 auto;
-        max-width: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      input {
-        font-size: 28px;
-        margin-top: 20px;
-      }
-    </style>
-	</head>
-	<body>
-		<form action="/user">
-			<input type="text" placeholder="username" name="username"></input>
-			<input type="submit" value="go to your page"></input>
-		</form>
-    <a href="/">index</a>
-    </br>
-    <a href="/page">page</a>
-    </br>
-    <a href="/user">user</a>
-	</body>
-</html>
+<form action="/user">
+  <input type="text" placeholder="username" name="username"></input>
+  <input type="submit" value="go to your page"></input>
+</form>
+{% endblock %}

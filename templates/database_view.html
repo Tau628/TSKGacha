@@ -1,42 +1,23 @@
-<!DOCTYPE HTML>
+{% extends "base.html" %} {% block title %}Gotcha Databases{% endblock %} {% block content
+%}
 
-<html>
-	<head>
-		<title>Gotcha Database</title>
-    <style>
-      body {
-        display: flex;
-        flex-direction: column;
-      }
-      p, form {
-        font-size: 20px;
-        margin-top: 20px;
-      }
-      img {
-        width: 300px;
-        margin: 10px;
-      }
-      p span {
-        color: blue;
-      }
-    </style>
-	</head>
-	<body>
-    <p>
-      <code>
-        {% for k,v in database.items() %}
-          <h1 style="color: {{ color }}">{{ k }}</h1>
-          {% if k == 'characters' %}
-            {% for c in v %}
-              <h3>{{ c['name'] }}</h3>
-              {{ c }}
-            {% endfor %}
-          {% else %}
-            {{ v }}
-          {% endif %}
-        {% endfor %}
+<code style="color: black">
+  {% for k,v in database.items() %}
+    <h1>{{ k }}</h1>
+    {% if k == 'characters' %}
+      {% for c in v %}
+        <h3>{{ c['name'] }}</h3>
+        {{ c }}
+      {% endfor %}
+    {% elif k == 'players' %}
+      {% for discrim, player in v.items() %}
+        <h3>{{ discrim }}</h3>
+        {{ player }}
+      {% endfor %}
+    {% else %}
+      {{ v }}
+    {% endif %}
+  {% endfor %}
+</code>
 
-      </code>
-    </p>
-	</body>
-</html>
+{% endblock %}
