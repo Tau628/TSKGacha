@@ -28,20 +28,8 @@ def recurse_prim(x):
 
 
 @web_site.route('/')
-def index():
-  return render_template('index.html')
-
-@web_site.route('/user/', defaults={'username': None})
-@web_site.route('/user/<username>')
-def generate_user(username):
-  if not username:
-    username = request.args.get('username')
-
-  if not username:
-    username = 'user'
-    #return 'Sorry error something, malformed request.'
-
-  return render_template('personal_user.html', user=username)
+def home():
+  return render_template('home.html')
 
 
 @web_site.route('/database')
@@ -84,7 +72,7 @@ def sign_up():
 
         #login_user(new_user, remember=True)
         flash('Account created!', category='success')
-        return redirect(url_for('index'))
+        return redirect(url_for('home'))
 
   return render_template('sign_up.html')
 
@@ -100,7 +88,7 @@ def login():
       if check_password_hash(user['password'], password):
         flash('Logged in successfully!', category='success')
         #login_user(user, remember=True)
-        return redirect(url_for('index'))
+        return redirect(url_for('home'))
       else:
         flash('Incorrect password, try again.', category='error')
     else:
