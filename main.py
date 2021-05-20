@@ -31,12 +31,8 @@ login_manager = LoginManager()
 login_manager.init_app(web_site)
 
 class User(UserMixin):
-  def __init__(self, email):
-    self.id = email
-    if email in db['players']:
-      self.name = db['players'][email]['username']
-    else:
-      self.name = None
+  def __init__(self, username):
+    self.id = username
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -62,16 +58,13 @@ def database_view():
 def sign_up():
   if request.method == 'POST':
     #Gets all the information from the form
-    email = request.form.get('email')
     username = request.form.get('username')
     password1 = request.form.get('password1')
     password2 = request.form.get('password2')
   
     #Checks the information to ensure that it is valid
-    if email in db['players']:
-        flash('Email already in use.', category='error')
-    elif len(email) < 4:
-        flash('Email must be greater than 3 characters.', category='error')
+    if username in db['players']:
+        flash('Username already in use.', category='error')
     elif len(username) < 2:
         flash('First name must be greater than 1 character.', category='error')
     elif password1 != password2:
@@ -84,15 +77,14 @@ def sign_up():
         new_user = {
           'coins': 0,
           'max_roster': 3,
-          'username': username,
           'password': generate_password_hash(password1, method='sha256'),
           }
         
         #Adds user to database
-        db['players'][email] = new_user
+        db['players'][username] = new_user
 
         #Automatically logs in the user
-        login_user(User(email), remember=True)
+        login_user(User(username), remember=True)
 
         flash('Account created!', category='success')
         return redirect(url_for('home'))
@@ -103,22 +95,22 @@ def sign_up():
 def login():
   if request.method == 'POST':
     #Gets all the information from the form
-    email = request.form.get('email')
+    username = request.form.get('username')
     password = request.form.get('password')
 
     #Checks if the email exists in the database
-    if email in db['players']:
-      user = db['players'][email]
+    if username in db['players']:
+      user = db['players'][username]
 
       #Checks if the password is valid
       if check_password_hash(user['password'], password):
         flash('Logged in successfully!', category='success')
-        login_user(User(email), remember=True)
+        login_user(User(username), remember=True)
         return redirect(url_for('home'))
       else:
         flash('Incorrect password, try again.', category='error')
     else:
-        flash('Email does not exist.', category='error')
+        flash('username does not exist.', category='error')
           
   return render_template('login.html', user = current_user)
 
@@ -148,6 +140,21 @@ def characters():
   if current_user.is_authenticated:
     char_names = enumerate([c['name'] for c in db['characters']])
     return render_template('characters.html', user = current_user, char_names = char_names)
+  else:
+    return redirect(url_for('home'))
+
+@web_site.route('/players/<ply_ind>')
+def player_page(chr_ind):
+  if current_user.is_authenticated:
+    return render_template('player_page.html', user = current_user, character = database.to_primitive(db['characters'][int(chr_ind)]))
+  else:
+    return redirect(url_for('home'))
+
+@web_site.route('/players')
+def players():
+  if current_user.is_authenticated:
+    char_names = enumerate([c['name'] for c in db['characters']])
+    return render_template('players.html', user = current_user, char_names = char_names)
   else:
     return redirect(url_for('home'))
 

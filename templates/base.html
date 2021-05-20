@@ -32,6 +32,7 @@
           <a class="nav-item nav-link" id="home" href="/">Home</a>
           <a class="nav-item nav-link" id="database" href="/database">Database</a>
           {% if user.is_authenticated %}
+          <a class="nav-item nav-link" id="characters" href="/characters">Characters</a>
           <a class="nav-item nav-link" id="secret" href="/secret">Secret</a>
           <a class="nav-item nav-link" id="logout" href="/logout">Log out</a>
           {% else %}
