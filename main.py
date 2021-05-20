@@ -34,7 +34,6 @@ class User(UserMixin):
   def __init__(self, email):
     self.id = email
     if email in db['players']:
-      print(db['players'][email])
       self.name = db['players'][email]['username']
     else:
       self.name = None
@@ -134,6 +133,13 @@ def logout():
 def secret():
   if current_user.is_authenticated:
     return render_template('secret.html', user = current_user)
+  else:
+    return redirect(url_for('home'))
+
+@web_site.route('/character/<chr_ind>')
+def character_page(chr_ind):
+  if current_user.is_authenticated:
+    return render_template('character_page.html', user = current_user, character = database.to_primitive(db['characters'][int(chr_ind)]))
   else:
     return redirect(url_for('home'))
 
