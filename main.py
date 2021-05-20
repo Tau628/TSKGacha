@@ -15,7 +15,8 @@ with open('./sampledatabase.json') as f:
 for k, v in data.items():
   db[k] = v
 '''
-
+#Recursively sets ObservedLists and ObservedDicts to primitive lists and dicts.
+#The Repl database uses these datatypes, so it's useful to convert when we need to do stuff.
 def recurse_prim(x):
   x = database.to_primitive(x)
   if isinstance(x, dict):
@@ -23,9 +24,6 @@ def recurse_prim(x):
   if isinstance(x,list):
     return [recurse_prim(y) for y in x]
   return x
-
-
-
 
 @web_site.route('/')
 def home():
@@ -44,12 +42,13 @@ def base():
 @web_site.route('/signup', methods=['GET','POST'])
 def sign_up():
   if request.method == 'POST':
+    #Gets all the information from the form
     email = request.form.get('email')
     username = request.form.get('username')
     password1 = request.form.get('password1')
     password2 = request.form.get('password2')
   
-
+    #Checks the information to ensure that it is valid
     if email in db['players']:
         flash('Email already in use.', category='error')
     elif len(email) < 4:
@@ -61,6 +60,8 @@ def sign_up():
     elif len(password1) < 7:
         flash('Password must be at least 7 characters.', category='error')
     else:
+        #If none of these checks trigger, the information is valid
+        #We now create a new user
         new_user = {
           'coins': 0,
           'max_roster': 3,
@@ -68,9 +69,12 @@ def sign_up():
           'password': generate_password_hash(password1, method='sha256'),
           }
         
+        #Adds user to database
         db['players'][email] = new_user
 
+        #Automatically logs in the user
         #login_user(new_user, remember=True)
+
         flash('Account created!', category='success')
         return redirect(url_for('home'))
 
@@ -79,12 +83,15 @@ def sign_up():
 @web_site.route('/login', methods=['GET','POST'])
 def login():
   if request.method == 'POST':
+    #Gets all the information from the form
     email = request.form.get('email')
     password = request.form.get('password')
 
+    #Checks if the email exists in the database
     if email in db['players']:
       user = db['players'][email]
 
+      #Checks if the password is valid
       if check_password_hash(user['password'], password):
         flash('Logged in successfully!', category='success')
         #login_user(user, remember=True)
