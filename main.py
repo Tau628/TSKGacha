@@ -136,10 +136,18 @@ def secret():
   else:
     return redirect(url_for('home'))
 
-@web_site.route('/character/<chr_ind>')
+@web_site.route('/characters/<chr_ind>')
 def character_page(chr_ind):
   if current_user.is_authenticated:
     return render_template('character_page.html', user = current_user, character = database.to_primitive(db['characters'][int(chr_ind)]))
+  else:
+    return redirect(url_for('home'))
+
+@web_site.route('/characters')
+def characters():
+  if current_user.is_authenticated:
+    char_names = enumerate([c['name'] for c in db['characters']])
+    return render_template('characters.html', user = current_user, char_names = char_names)
   else:
     return redirect(url_for('home'))
 

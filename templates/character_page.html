@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
 %}
 <h2>{{ character['name'] }}</h2>
-<h3>{{ '☆'*character['rarity'] }}</h3>
+<h3>{{ character['rarity'] }}</h3>
 {{ character['series'] }}
 {% endblock %}
