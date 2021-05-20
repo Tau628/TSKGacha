@@ -1,5 +1,6 @@
-from flask import Flask, render_template, request, flash
+from flask import Flask, render_template, request, flash, redirect, url_for
 from replit import db, database
+#from werkzeug.security import generate_password_hash, check_password_hash
 
 web_site = Flask(__name__)
 
@@ -60,8 +61,8 @@ def sign_up():
     password2 = request.form.get('password2')
   
 
-    if False: ###IF USER EXISTS
-        flash('Email already exists.', category='error')
+    if email in db['players']:
+        flash('Email already in use.', category='error')
     elif len(email) < 4:
         flash('Email must be greater than 3 characters.', category='error')
     elif len(username) < 2:
@@ -82,7 +83,7 @@ def sign_up():
 
         #login_user(new_user, remember=True)
         flash('Account created!', category='success')
-        #return redirect(url_for('views.home'))
+        return redirect(url_for('index'))
 
   return render_template('sign_up.html')
 
