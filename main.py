@@ -144,17 +144,17 @@ def characters():
     return redirect(url_for('home'))
 
 @web_site.route('/players/<ply_ind>')
-def player_page(chr_ind):
+def player_page(ply_ind):
   if current_user.is_authenticated:
-    return render_template('player_page.html', user = current_user, character = database.to_primitive(db['characters'][int(chr_ind)]))
+    return render_template('player_page.html', user = current_user, player = (ply_ind, database.to_primitive(db['players'][ply_ind])))
   else:
     return redirect(url_for('home'))
 
 @web_site.route('/players')
 def players():
   if current_user.is_authenticated:
-    char_names = enumerate([c['name'] for c in db['characters']])
-    return render_template('players.html', user = current_user, char_names = char_names)
+    player_names = db['players'].keys()
+    return render_template('players.html', user = current_user, player_names = player_names)
   else:
     return redirect(url_for('home'))
 

@@ -1,0 +1,6 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+{% for p in player_names %}
+  <a href="players/{{ p }}"> {{ p }}</a><br>
+{% endfor %}
+{% endblock %}
