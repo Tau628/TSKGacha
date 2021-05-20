@@ -46,7 +46,10 @@ def load_user(user_id):
 
 @web_site.route('/')
 def home():
-  return render_template('home.html', user = current_user)
+  if current_user.is_authenticated:
+    return redirect(url_for('player_page', ply_ind = current_user.id))
+  else:
+    return render_template('home.html', user = current_user)
 
 
 @web_site.route('/database')
