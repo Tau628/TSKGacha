@@ -129,6 +129,14 @@ def logout():
     logout_user()
     return redirect(url_for('login'))
 
+
+@web_site.route('/secret')
+def secret():
+  if current_user.is_authenticated:
+    return render_template('secret.html', user = current_user)
+  else:
+    return redirect(url_for('home'))
+
 if __name__ == '__main__':
   web_site.secret_key = 'super secret key'
   web_site.config['SESSION_TYPE'] = 'filesystem'
