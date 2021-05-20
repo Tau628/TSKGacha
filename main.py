@@ -89,6 +89,22 @@ def sign_up():
 
 @web_site.route('/login', methods=['GET','POST'])
 def login():
+  if request.method == 'POST':
+    email = request.form.get('email')
+    password = request.form.get('password')
+
+    if email in db['players']:
+      user = db['players'][email]
+
+      if check_password_hash(user['password'], password):
+        flash('Logged in successfully!', category='success')
+        #login_user(user, remember=True)
+        return redirect(url_for('index'))
+      else:
+        flash('Incorrect password, try again.', category='error')
+    else:
+        flash('Email does not exist.', category='error')
+          
   return render_template('login.html')
 
 if __name__ == '__main__':
