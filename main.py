@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, flash, redirect, url_for
 from replit import db, database
 from werkzeug.security import generate_password_hash, check_password_hash
-from flask_login import login_user, login_required, logout_user, current_user
+from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 
 web_site = Flask(__name__)
 
@@ -25,9 +25,33 @@ def recurse_prim(x):
     return [recurse_prim(y) for y in x]
   return x
 
+
+
+login_manager = LoginManager()
+login_manager.init_app(web_site)
+
+class User(UserMixin):
+  def __init__(self, email):
+    self.id = email
+    if email in db['players']:
+      print(db['players'][email])
+      self.name = db['players'][email]['username']
+    else:
+      self.name = None
+
+@login_manager.user_loader
+def load_user(user_id):
+  if user_id in db['players']:
+    return User(user_id)
+  else:
+    return None
+
+
+
+
 @web_site.route('/')
 def home():
-  return render_template('home.html')
+  return render_template('home.html', user = current_user)
 
 
 @web_site.route('/database')
@@ -73,7 +97,7 @@ def sign_up():
         db['players'][email] = new_user
 
         #Automatically logs in the user
-        #login_user(new_user, remember=True)
+        login_user(User(email), remember=True)
 
         flash('Account created!', category='success')
         return redirect(url_for('home'))
@@ -94,7 +118,7 @@ def login():
       #Checks if the password is valid
       if check_password_hash(user['password'], password):
         flash('Logged in successfully!', category='success')
-        #login_user(user, remember=True)
+        login_user(User(email), remember=True)
         return redirect(url_for('home'))
       else:
         flash('Incorrect password, try again.', category='error')
@@ -102,6 +126,12 @@ def login():
         flash('Email does not exist.', category='error')
           
   return render_template('login.html')
+
+@web_site.route('/logout')
+#@login_required
+def logout():
+    logout_user()
+    return redirect(url_for('login'))
 
 if __name__ == '__main__':
   web_site.secret_key = 'super secret key'
