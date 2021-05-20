@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, flash, redirect, url_for
 from replit import db, database
-#from werkzeug.security import generate_password_hash, check_password_hash
+from werkzeug.security import generate_password_hash, check_password_hash
 
 web_site = Flask(__name__)
 
@@ -76,7 +76,7 @@ def sign_up():
           'coins': 0,
           'max_roster': 3,
           'username': username,
-          'password': password1,
+          'password': generate_password_hash(password1, method='sha256'),
           }
         
         db['players'][email] = new_user
