@@ -124,13 +124,6 @@ def logout():
     return redirect(url_for('login'))
 
 
-@web_site.route('/secret')
-def secret():
-  if current_user.is_authenticated:
-    return render_template('secret.html', user = current_user)
-  else:
-    return redirect(url_for('home'))
-
 @web_site.route('/characters/<chr_ind>')
 def character_page(chr_ind):
   if current_user.is_authenticated:
