@@ -57,11 +57,7 @@ def home():
 @web_site.route('/database')
 def database_view():
   database = {k:recurse_prim(v) for k,v in db.items()}
-  return render_template('database_view.html', database = database)
-
-@web_site.route('/base')
-def base():
-  return render_template('base.html')
+  return render_template('database_view.html', user = current_user, database = database)
 
 @web_site.route('/signup', methods=['GET','POST'])
 def sign_up():
@@ -102,7 +98,7 @@ def sign_up():
         flash('Account created!', category='success')
         return redirect(url_for('home'))
 
-  return render_template('sign_up.html')
+  return render_template('sign_up.html', user = current_user)
 
 @web_site.route('/login', methods=['GET','POST'])
 def login():
@@ -125,7 +121,7 @@ def login():
     else:
         flash('Email does not exist.', category='error')
           
-  return render_template('login.html')
+  return render_template('login.html', user = current_user)
 
 @web_site.route('/logout')
 #@login_required
