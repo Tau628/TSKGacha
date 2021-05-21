@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, redirect, url_for
+from flask import Blueprint, render_template, redirect, url_for, request
 from replit import db, database
 from flask_login import current_user
 
@@ -20,4 +20,9 @@ def characters():
   else:
     return redirect(url_for('home'))
 
-#
+@charactersBP.route('/proposal', methods=['GET','POST'])
+def proposal():
+  if request.method == 'POST':
+    #Gets all the information from the form
+    print(request.form)
+  return render_template('characters/proposal.html', user = current_user)

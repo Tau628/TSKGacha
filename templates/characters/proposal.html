@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block title %}Character Proposals{% endblock %} {% block content
+%}
+<form method="POST">
+  <h3 align="center">Character Proposal</h3>
+  <div class="form-group">
+    <label for="username">Character Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="char_name"
+      name="char_name"
+      placeholder="Enter character name"
+    />
+  </div>
+  <div class="form-group">
+    <label for="password">Character Series</label>
+    <input
+      type="text"
+      class="form-control"
+      id="char_series"
+      name="char_series"
+      placeholder="Enter character series"
+    />
+  </div>
+  <br />
+  <button type="submit" class="btn btn-primary">Propose</button>
+</form>
+{% endblock %}
