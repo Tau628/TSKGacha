@@ -50,7 +50,7 @@ def sign_up():
         db['players'][username] = new_user
 
         #Automatically logs in the user
-        login_user(User(username), remember=True)
+        login_user(User(username), remember=False)
 
         flash('Account created!', category='success')
         return redirect(url_for('otherBP.home'))
@@ -63,6 +63,7 @@ def login():
     #Gets all the information from the form
     username = request.form.get('username')
     password = request.form.get('password')
+    remember = request.form.get('rememberMe')=='on'
 
     #Checks if the email exists in the database
     if username in db['players']:
@@ -71,7 +72,7 @@ def login():
       #Checks if the password is valid
       if check_password_hash(user['password'], password):
         flash('Logged in successfully!', category='success')
-        login_user(User(username), remember=True)
+        login_user(User(username), remember=remember)
         return redirect(url_for('otherBP.home'))
       else:
         flash('Incorrect password, try again.', category='error')
