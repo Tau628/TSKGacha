@@ -3,7 +3,12 @@ from replit import db, database
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 
+from blueprints.players import playersBP
+
+#print(playersBP)
+
 web_site = Flask(__name__)
+web_site.register_blueprint(playersBP)
 
 #Loads in database from JSON
 '''
@@ -47,7 +52,7 @@ def load_user(user_id):
 @web_site.route('/')
 def home():
   if current_user.is_authenticated:
-    return redirect(url_for('player_page', ply_ind = current_user.id))
+    return redirect(url_for('playersBP.player_page', ply_ind = current_user.id))
   else:
     return render_template('home.html', user = current_user)
 
@@ -139,20 +144,6 @@ def characters():
   else:
     return redirect(url_for('home'))
 
-@web_site.route('/players/<ply_ind>')
-def player_page(ply_ind):
-  if current_user.is_authenticated:
-    return render_template('players/player_page.html', user = current_user, player = (ply_ind, database.to_primitive(db['players'][ply_ind])))
-  else:
-    return redirect(url_for('home'))
-
-@web_site.route('/players')
-def players():
-  if current_user.is_authenticated:
-    player_names = db['players'].keys()
-    return render_template('players/players.html', user = current_user, player_names = player_names)
-  else:
-    return redirect(url_for('home'))
 
 @web_site.route('/dashboard', methods=['GET','POST'])
 def dashboard():
