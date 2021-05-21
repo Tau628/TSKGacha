@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, redirect, url_for, request
+from flask import Blueprint, render_template, redirect, url_for, request, flash
 from replit import db, database
 from flask_login import current_user
 
@@ -23,5 +23,26 @@ def characters():
 def proposal():
   if request.method == 'POST':
     #Gets all the information from the form
-    print(request.form)
+    name = request.form.get('char_name')
+    series = request.form.get('char_series')
+  
+    #Checks the information to ensure that it is valid
+    if  len(name) < 0 or len(series) < 0 :
+        flash('Please type a name and a series.', category='error')
+    else:
+    
+      new_char = {
+        'image': None,
+        'name': name,
+        'status': 'pending',
+        'series': series,
+        'suggested_by': None,
+        'suggested_timestamp': 'now, duh',
+        'approval_votes': {},
+        'rarity_votes': {}
+      }
+
+      db['proposed_characters'].append(new_char)
+      flash('Character proposed!', category='success')
+
   return render_template('characters/proposal.html', user = current_user)
