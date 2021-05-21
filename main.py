@@ -92,7 +92,7 @@ def sign_up():
         flash('Account created!', category='success')
         return redirect(url_for('home'))
 
-  return render_template('sign_up.html', user = current_user)
+  return render_template('authentication/sign_up.html', user = current_user)
 
 @web_site.route('/login', methods=['GET','POST'])
 def login():
@@ -115,7 +115,7 @@ def login():
     else:
         flash('username does not exist.', category='error')
           
-  return render_template('login.html', user = current_user)
+  return render_template('authentication/login.html', user = current_user)
 
 @web_site.route('/logout')
 #@login_required
@@ -127,7 +127,7 @@ def logout():
 @web_site.route('/characters/<chr_ind>')
 def character_page(chr_ind):
   if current_user.is_authenticated:
-    return render_template('character_page.html', user = current_user, character = database.to_primitive(db['characters'][int(chr_ind)]))
+    return render_template('characters/character_page.html', user = current_user, character = database.to_primitive(db['characters'][int(chr_ind)]))
   else:
     return redirect(url_for('home'))
 
@@ -135,14 +135,14 @@ def character_page(chr_ind):
 def characters():
   if current_user.is_authenticated:
     char_names = enumerate([c['name'] for c in db['characters']])
-    return render_template('characters.html', user = current_user, char_names = char_names)
+    return render_template('characters/characters.html', user = current_user, char_names = char_names)
   else:
     return redirect(url_for('home'))
 
 @web_site.route('/players/<ply_ind>')
 def player_page(ply_ind):
   if current_user.is_authenticated:
-    return render_template('player_page.html', user = current_user, player = (ply_ind, database.to_primitive(db['players'][ply_ind])))
+    return render_template('players/player_page.html', user = current_user, player = (ply_ind, database.to_primitive(db['players'][ply_ind])))
   else:
     return redirect(url_for('home'))
 
@@ -150,14 +150,12 @@ def player_page(ply_ind):
 def players():
   if current_user.is_authenticated:
     player_names = db['players'].keys()
-    return render_template('players.html', user = current_user, player_names = player_names)
+    return render_template('players/players.html', user = current_user, player_names = player_names)
   else:
     return redirect(url_for('home'))
 
 @web_site.route('/dashboard', methods=['GET','POST'])
 def dashboard():
-  print('hey')
-  print(request.method)
   if request.method == 'POST':
     
     if request.form['submit_button'] == 'Give Kremkoin':
