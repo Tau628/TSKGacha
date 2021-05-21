@@ -154,6 +154,26 @@ def players():
   else:
     return redirect(url_for('home'))
 
+@web_site.route('/dashboard', methods=['GET','POST'])
+def dashboard():
+  print('hey')
+  print(request.method)
+  if request.method == 'POST':
+    
+    if request.form['submit_button'] == 'Give Kremkoin':
+      db['players'][current_user.id]['coins'] += 1
+      flash(f"You now have {db['players'][current_user.id]['coins']} koins!", category='success')
+
+    elif request.form['submit_button'] == 'Do Something Else':
+      print('Do something else')
+    else:
+      print('Post but no button')
+
+  if current_user.is_authenticated:
+    return render_template('dashboard.html', user = current_user)
+  else:
+    return redirect(url_for('home'))
+
 if __name__ == '__main__':
   web_site.secret_key = 'super secret key'
   web_site.config['SESSION_TYPE'] = 'filesystem'
