@@ -4,11 +4,13 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 
 from blueprints.players import playersBP
+from blueprints.characters import charactersBP
 
 #print(playersBP)
 
 web_site = Flask(__name__)
 web_site.register_blueprint(playersBP)
+web_site.register_blueprint(charactersBP)
 
 #Loads in database from JSON
 '''
@@ -129,20 +131,7 @@ def logout():
     return redirect(url_for('login'))
 
 
-@web_site.route('/characters/<chr_ind>')
-def character_page(chr_ind):
-  if current_user.is_authenticated:
-    return render_template('characters/character_page.html', user = current_user, character = database.to_primitive(db['characters'][int(chr_ind)]))
-  else:
-    return redirect(url_for('home'))
 
-@web_site.route('/characters')
-def characters():
-  if current_user.is_authenticated:
-    char_names = enumerate([c['name'] for c in db['characters']])
-    return render_template('characters/characters.html', user = current_user, char_names = char_names)
-  else:
-    return redirect(url_for('home'))
 
 
 @web_site.route('/dashboard', methods=['GET','POST'])

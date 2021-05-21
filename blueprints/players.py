@@ -4,7 +4,6 @@ from flask_login import current_user
 
 playersBP = Blueprint('playersBP', __name__, url_prefix='/players')
 
-
 @playersBP.route('/<ply_ind>')
 def player_page(ply_ind):
   if current_user.is_authenticated:

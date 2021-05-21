@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% block title %}Characters{% endblock %} {% block content
 %}
-{% for i, c in char_names %}
-  <a href="characters/{{ i }}">{{ i }}. {{ c }}</a><br>
+{% for url, i, c in char_list %}
+  <a href="{{ url }}">{{ i }}. {{ c }}</a><br>
 {% endfor %}
 {% endblock %}
