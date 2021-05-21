@@ -1,4 +1,5 @@
 from flask import Flask
+from replit import db
 
 from blueprints.players import playersBP
 from blueprints.characters import charactersBP

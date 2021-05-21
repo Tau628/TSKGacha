@@ -5,18 +5,24 @@
   {% for k,v in database.items() %}
     <h1>{{ k }}</h1>
     {% if k == 'characters' %}
-      {% for c in v %}
-        <h3>{{ c['name'] }}</h3>
-        {{ c }}
+      {% for char_ind, char in v.items() %}
+        <h3>{{char_ind}}. {{ char['name'] }}</h3>
+        {{ char }}
       {% endfor %}
     {% elif k == 'players' %}
       {% for discrim, player in v.items() %}
         <h3>{{ discrim }}</h3>
         {{ player }}
       {% endfor %}
+    {% elif k == 'proposed_characters' %}
+      {% for char in v %}
+        <h3>{{ char['name'] }}</h3>
+        {{ char }}
+      {% endfor %}
     {% else %}
       {{ v }}
     {% endif %}
+    <hr>
   {% endfor %}
 </code>
 

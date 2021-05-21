@@ -76,7 +76,7 @@ def login():
       else:
         flash('Incorrect password, try again.', category='error')
     else:
-        flash('username does not exist.', category='error')
+        flash('Username does not exist.', category='error')
           
   return render_template('authentication/login.html', user = current_user)
 
