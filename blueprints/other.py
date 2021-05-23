@@ -34,12 +34,14 @@ def database_view():
 @otherBP.route('/dashboard', methods=['GET','POST'])
 def dashboard():
   if request.method == 'POST':
+
+    button = request.form.get('submit_button')
     
-    if request.form['submit_button'] == 'Give Kremkoin':
+    if button == 'Give Kremkoin':
       db['players'][current_user.id]['coins'] += 1
       flash(f"You now have {db['players'][current_user.id]['coins']} koins!", category='success')
 
-    elif request.form['submit_button'] == 'Do Something Else':
+    elif button == 'Do Something Else':
       print('Do something else')
     else:
       print('Post but no button')
