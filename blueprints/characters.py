@@ -54,10 +54,14 @@ def proposal():
     elif button == 'vote':
       #print(request.form)
       for k,v in request.form.items():
-        if k.split('-')[0] == 'charRarity':
+        if k.split('-')[0] in ['charRarity', 'charApprove']:
+          if k.split('-')[0] == 'charRarity':
+            voteType = 'rarity_votes'
+          else:
+            voteType = 'approval_votes'
           char_ind = int(k.split('-')[1])
           option = v.split('-')[1]
-          db['proposed_characters'][char_ind]['rarity_votes'][current_user.id] = option
+          db['proposed_characters'][char_ind][voteType][current_user.id] = option
 
 
       flash('Voted')

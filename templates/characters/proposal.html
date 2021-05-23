@@ -27,17 +27,30 @@
 </form>
 
 <form method="POST">
-  <h3 align="center">Pending characters</h3>
+  <h2 align="center">Pending characters</h2>
 
 {% for i, character in proposed_characters %}
-{{ character['name']}} ({{ character['series'] }})
+<h3>{{ character['name']}} ({{ character['series'] }})</h3>
+<u>Approval</u>
+  {% for j in ['Yes', 'No', 'Abstain'] %}
+    <div class="form-check">
+      <input 
+        class="form-check-input"
+        type="radio"
+        name="{{ 'charApprove-' + i }}"
+        value="{{ 'option-' + j}}" 
+        {{ 'checked' if character['approval_votes'][user.id] == j else '' }}
+      ><label class="form-check-label" for="{{ 'charApprove-' + i }}">{{j}}</label>
+    </div>
+  {% endfor %}
+<br>
+<u>Rarity</u>
   {% for j in ['1','2','3','4','5', 'Abstain'] %}
     <div class="form-check">
       <input 
         class="form-check-input"
         type="radio"
         name="{{ 'charRarity-' + i }}"
-        id="exampleRadios1"
         value="{{ 'option-' + j}}" 
         {{ 'checked' if character['rarity_votes'][user.id] == j else '' }}
       ><label class="form-check-label" for="{{ 'charRarity-' + i }}">{{j}}</label>
