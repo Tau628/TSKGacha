@@ -55,4 +55,4 @@ def proposal():
       print(request.form)
       flash('Voted')
 
-  return render_template('characters/proposal.html', user = current_user)
+  return render_template('characters/proposal.html', user = current_user, proposed_characters = [(str(i), c) for i,c in enumerate(db['proposed_characters'])])
