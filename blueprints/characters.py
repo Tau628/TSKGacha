@@ -66,4 +66,6 @@ def proposal():
 
       flash('Voted')
 
-  return render_template('characters/proposal.html', user = current_user, proposed_characters = [(str(i), c) for i,c in enumerate(db['proposed_characters'])])
+  proposed_characters = [(str(i), c) for i,c in enumerate(db['proposed_characters']) if c['status']=='pending']
+
+  return render_template('characters/proposal.html', user = current_user, proposed_characters = proposed_characters)
