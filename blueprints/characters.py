@@ -52,7 +52,14 @@ def proposal():
         flash('Character proposed!', category='success')
     
     elif button == 'vote':
-      print(request.form)
+      #print(request.form)
+      for k,v in request.form.items():
+        if k.split('-')[0] == 'charRarity':
+          char_ind = int(k.split('-')[1])
+          option = v.split('-')[1]
+          db['proposed_characters'][char_ind]['rarity_votes'][current_user.id] = option
+
+
       flash('Voted')
 
   return render_template('characters/proposal.html', user = current_user, proposed_characters = [(str(i), c) for i,c in enumerate(db['proposed_characters'])])
