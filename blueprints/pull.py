@@ -29,7 +29,6 @@ def pickChar():
     print('There are no characters within this rarity')
     return None
   
-  print(rarity_picked)
   choices = list(viable_characters.keys())
   return np.random.choice(choices)
 
@@ -61,7 +60,16 @@ def pull():
         db['players'][current_user.id]['coins'] -= 1
 
     elif button == 'remove':
-      db['players'][current_user.id]['pulled_character'] = None
+      removing = request.form.get('characterRemoving').split('-')[1]
+      if removing == 'pulled':
+        db['players'][current_user.id]['pulled_character'] = None
+      else:
+        removing = int(removing)
+        db['players'][current_user.id]['roster'].pop(removing)
+        db['players'][current_user.id]['roster'].append(player['pulled_character'])
+        db['players'][current_user.id]['pulled_character'] = None
+
+
 
   player = db['players'][current_user.id]
   can_pull = player['pulled_character'] is None

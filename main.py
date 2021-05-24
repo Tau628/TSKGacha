@@ -7,8 +7,8 @@ from blueprints.auth import authBP, login_manager
 from blueprints.pull import pullBP
 from blueprints.other import otherBP
 
-for p in db['players'].keys():
-  db['players'][p]['pulled_character'] = None
+#for p in db['players'].keys():
+#  db['players'][p]['roster'] = []
 
 app = Flask(__name__)
 login_manager.init_app(app)
@@ -19,7 +19,7 @@ app.register_blueprint(pullBP)
 app.register_blueprint(otherBP)
 
 #Loads in database from JSON
-'''
+
 import json
 for k in db.keys():
   del db[k]
@@ -27,7 +27,7 @@ with open('./sampledatabase.json') as f:
   data = json.load(f)
 for k, v in data.items():
   db[k] = v
-'''
+
 
 if __name__ == '__main__':
   app.secret_key = 'super secret key'

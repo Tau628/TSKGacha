@@ -17,7 +17,7 @@ def characters():
     char_list = [(url_for('charactersBP.character_page', chr_ind = i), i, char['name']) for i,char in db['characters'].items()]
     return render_template('characters/characters.html', user = current_user, char_list = char_list)
   else:
-    return redirect(url_for('home'))
+    return redirect(url_for('otherBP.home'))
 
 @charactersBP.route('/proposal', methods=['GET','POST'])
 def proposal():
