@@ -1,5 +1,11 @@
 {% extends "base.html" %} {% block title %}{{ player[0] }}{% endblock %} {% block content %}
 <h2>{{ player[0] }}</h2>
-Coins: {{ player[1]['coins'] }}<br>
-Max Roster: {{ player[1]['max_roster'] }}
+
+<h3>Coins:</h3>
+{{ player[1]['coins'] }}<br>
+
+<h3>Roster:</h3>
+{% for i, char in owned_characters %}
+  {{i}}. {{char['name']}} ({{char['series']}})<br>
+{% endfor %}
 {% endblock %}
