@@ -18,12 +18,10 @@ This is the trade page.
   <div class="form-group">
     <label for="exampleFormControlSelect2">Select character(s) to trade:</label>
     <select class="form-control" id="partner" name="partner">
-      <option value="" selected disabled>Please another player</option>
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
+      <option value="" selected disabled>Please select another player</option>
+      {% for name in other_players.keys()%}
+        <option value="{{name}}">{{name}}</option>
+      {% endfor %}
     </select>
   </div>
 

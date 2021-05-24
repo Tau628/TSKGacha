@@ -8,8 +8,10 @@ tradesBP = Blueprint('tradesBP', __name__)
 def trades():
   roster = db['players'][current_user.id]['roster']
   roster = [(i, db['characters'][i]) for i in roster]
+
+  other_players = {name:player for name,player in db['players'].items() if name!=current_user.id}
+
   if request.method == 'POST':
-    print('POST was done.')
     print(request.form)
-    print(request.form.getlist('offer_character'))
-  return render_template('trades/trades.html', user=current_user, user_roster=roster)
+
+  return render_template('trades/trades.html', user=current_user, user_roster=roster, other_players=other_players)
