@@ -6,6 +6,7 @@ from blueprints.characters import charactersBP
 from blueprints.auth import authBP, login_manager
 from blueprints.pull import pullBP
 from blueprints.other import otherBP
+from blueprints.trades import tradesBP
 
 #for p in db['players'].keys():
 #  db['players'][p]['roster'] = []
@@ -17,6 +18,7 @@ app.register_blueprint(charactersBP)
 app.register_blueprint(authBP)
 app.register_blueprint(pullBP)
 app.register_blueprint(otherBP)
+app.register_blueprint(tradesBP)
 
 #Loads in database from JSON
 '''
