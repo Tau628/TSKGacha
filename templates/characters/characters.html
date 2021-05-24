@@ -1,5 +1,4 @@
-{% extends "base.html" %} {% block title %}Characters{% endblock %} {% block content
-%}
+{% extends "base.html" %} {% block title %}Characters{% endblock %} {% block content %}
 {% for url, i, c in char_list %}
   <a href="{{ url }}">{{ i }}. {{ c }}</a><br>
 {% endfor %}
