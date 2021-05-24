@@ -44,6 +44,7 @@ def sign_up():
           'coins': 0,
           'max_roster': 3,
           'password': generate_password_hash(password1, method='sha256'),
+          'roster': [],
           }
         
         #Adds user to database
