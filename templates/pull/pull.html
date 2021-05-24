@@ -1,8 +1,36 @@
-{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content %}
+{% extends "base.html" %} {% block title %}Pulling{% endblock %} {% block content %}
 <h3>TSK Gotcha</h3>
 This is the pull page.
+{% if can_pull %}
 <form method="POST">
   <button type="submit" class="btn btn-primary" name="submit_button" value="pull">Pull</button>
 </form>
+
+{% else %}
+You pulled <b>{{ pulled_char[1]['name'] }}</b>.<br>
+<form method="POST">
+{% for i,c in characters %}
+    <div class="form-check">
+      <input 
+        class="form-check-input"
+        type="radio"
+        name="characterRemoving"
+        value="{{ 'char-' + i }}" 
+      ><label class="form-check-label" for="characterRemoving">{{ c['name'] }}</label>
+    </div>
+{% endfor %}
+    <div class="form-check">
+      <input 
+        class="form-check-input"
+        type="radio"
+        name="characterRemoving"
+        value="{{ 'char-pull' }}" 
+      ><label class="form-check-label" for="characterRemoving">{{ pulled_char[1]['name'] }}</label>
+    </div>
+  <br>
+  <button type="submit" class="btn btn-primary" name="submit_button" value="remove">Remove</button>
+</form>
+
+{% endif %}
 
 {% endblock %}

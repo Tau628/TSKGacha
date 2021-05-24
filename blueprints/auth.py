@@ -45,6 +45,7 @@ def sign_up():
           'max_roster': 3,
           'password': generate_password_hash(password1, method='sha256'),
           'roster': [],
+          'pulled_character': None,
           }
         
         #Adds user to database

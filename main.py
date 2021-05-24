@@ -7,6 +7,9 @@ from blueprints.auth import authBP, login_manager
 from blueprints.pull import pullBP
 from blueprints.other import otherBP
 
+for p in db['players'].keys():
+  db['players'][p]['pulled_character'] = None
+
 app = Flask(__name__)
 login_manager.init_app(app)
 app.register_blueprint(playersBP)
