@@ -7,7 +7,7 @@ This is the trade page.
 <form method="POST">
 
   <div class="form-group">
-    <label for="exampleFormControlSelect2">Select character(s) to trade:</label>
+    <label for="offer_character">Select character(s) to trade:</label>
     <select multiple class="form-control" id="offer_character" name="offer_character">
       {% for i, char in user_roster%}
         <option value="{{i}}">{{i}}. {{char['name']}} ({{char['series']}})</option>
@@ -16,13 +16,25 @@ This is the trade page.
   </div>
 
   <div class="form-group">
-    <label for="exampleFormControlSelect2">Select character(s) to trade:</label>
+    <label for="offer_coins">And how many Koins to offer:</label>
+			<div class="qty">
+        <input type="number" class="count" id='offer_coins' name="offer_coins" value="0">
+      </div>
+  </div>
+
+  <div class="form-group">
+    <label for="partner">Select player to trade with:</label>
     <select class="form-control" id="partner" name="partner">
       <option value="" selected disabled>Please select another player</option>
       {% for name in other_players.keys()%}
         <option value="{{name}}">{{name}}</option>
       {% endfor %}
     </select>
+  </div>
+
+  <div class="form-group">
+    <label for="request_character">Select Character to request:</label>
+    <input type="text" class="form-control" id="request_character" name="request_character">
   </div>
 
   <button type="submit" class="btn btn-primary" name="submit_button" value="offer">Offer Trade</button>
