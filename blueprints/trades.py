@@ -63,10 +63,10 @@ def trades():
         flash(f"{trade['instigator']} doesn't have the characters for this trade. Trade deleted.", category='error')
         db['trades'][trade_id]['status'] = 'errored'
 
-      elif 0 < -trade['coins'] >= db['players'][current_user.id]['coins']:
+      elif 0 < -trade['coins'] > db['players'][current_user.id]['coins']:
         flash("You don't have enough coins.", category='error')
 
-      elif 0 < trade['coins'] >= db['players'][trade['instigator']]['coins']:
+      elif 0 < trade['coins'] > db['players'][trade['instigator']]['coins']:
         flash(f"{trade['instigator']} don't have enough coins.", category='error')
 
       else:
