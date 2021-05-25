@@ -40,29 +40,41 @@ This is the trade page.
   <button type="submit" class="btn btn-primary" name="submit_button" value="offer">Offer Trade</button>
 </form>
 
-<h2>⚠ TRADE OFFER ⚠</h2>
+{% if trades['my'] != [] %}
+  <h2>⚠ TRADE OFFER ⚠</h2>
+{% endif %}
+
 {% for i,trade in trades['my'] %}
   <h3>{{ trade['instigator'] }}</h3>
 
-  <u>I receive:</u><br>
+  <u>{{ trade['instigator'] }} receives:</u><br>
   {% for char_id in trade['receiving'] %}
     {{ char_id }}. {{ characters[char_id]['name'] }} ({{ characters[char_id]['series'] }})<br>
   {% endfor %}
+  {% if trade['coins'] < 0 %}
+    {{ -trade['coins'] }} Koins<br>
+  {% endif %}
   <br>
 
   <u>You receive:</u><br>
   {% for char_id in trade['giving'] %}
     {{ char_id }}. {{ characters[char_id]['name'] }} ({{ characters[char_id]['series'] }})<br>
   {% endfor %}
+  {% if trade['coins'] > 0 %}
+    {{ trade['coins'] }} Koins<br>
+  {% endif %}
   <br>
 
   <form method="POST">
     <button type="submit" class="btn btn-primary" name="submit_button" value="accept-{{i}}">Accept Trade</button>
-    <button type="submit" class="btn btn-primary" name="submit_button" value="accept-{{i}}">Reject Trade</button>
+    <button type="submit" class="btn btn-primary" name="submit_button" value="reject-{{i}}">Reject Trade</button>
   </form>
 {% endfor %}
 
-<h2>Your Trades</h2>
+{% if trades['your'] != [] %}
+  <h2>Your Trades</h2>
+{% endif %}
+
 {% for i,trade in trades['your'] %}
   <h3>{{ trade['partner'] }}</h3>
 
@@ -70,12 +82,18 @@ This is the trade page.
   {% for char_id in trade['giving'] %}
     {{ char_id }}. {{ characters[char_id]['name'] }} ({{ characters[char_id]['series'] }})<br>
   {% endfor %}
+  {% if trade['coins'] > 0 %}
+    {{ trade['coins'] }} Koins<br>
+  {% endif %}
   <br>
 
   <u>In exchange for:</u><br>
   {% for char_id in trade['receiving'] %}
     {{ char_id }}. {{ characters[char_id]['name'] }} ({{ characters[char_id]['series'] }})<br>
   {% endfor %}
+  {% if trade['coins'] < 0 %}
+    {{ -trade['coins'] }} Koins<br>
+  {% endif %}
   <br>
 {% endfor %}
 
