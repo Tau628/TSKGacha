@@ -40,7 +40,44 @@ This is the trade page.
   <button type="submit" class="btn btn-primary" name="submit_button" value="offer">Offer Trade</button>
 </form>
 
+<h2>⚠ TRADE OFFER ⚠</h2>
+{% for i,trade in trades['my'] %}
+  <h3>{{ trade['instigator'] }}</h3>
 
+  <u>I receive:</u><br>
+  {% for char_id in trade['receiving'] %}
+    {{ char_id }}. {{ characters[char_id]['name'] }} ({{ characters[char_id]['series'] }})<br>
+  {% endfor %}
+  <br>
+
+  <u>You receive:</u><br>
+  {% for char_id in trade['giving'] %}
+    {{ char_id }}. {{ characters[char_id]['name'] }} ({{ characters[char_id]['series'] }})<br>
+  {% endfor %}
+  <br>
+
+  <form method="POST">
+    <button type="submit" class="btn btn-primary" name="submit_button" value="accept-{{i}}">Accept Trade</button>
+    <button type="submit" class="btn btn-primary" name="submit_button" value="accept-{{i}}">Reject Trade</button>
+  </form>
+{% endfor %}
+
+<h2>Your Trades</h2>
+{% for i,trade in trades['your'] %}
+  <h3>{{ trade['partner'] }}</h3>
+
+  <u>You offered:</u><br>
+  {% for char_id in trade['giving'] %}
+    {{ char_id }}. {{ characters[char_id]['name'] }} ({{ characters[char_id]['series'] }})<br>
+  {% endfor %}
+  <br>
+
+  <u>In exchange for:</u><br>
+  {% for char_id in trade['receiving'] %}
+    {{ char_id }}. {{ characters[char_id]['name'] }} ({{ characters[char_id]['series'] }})<br>
+  {% endfor %}
+  <br>
+{% endfor %}
 
 
 
