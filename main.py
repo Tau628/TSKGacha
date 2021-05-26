@@ -8,8 +8,9 @@ from blueprints.pull import pullBP
 from blueprints.other import otherBP
 from blueprints.trades import tradesBP
 
-#for p in db['players'].keys():
-#  db['players'][p]['roster'] = []
+#db['trades'] = []
+#Aspect radio for art: 1080:1920
+
 
 app = Flask(__name__)
 login_manager.init_app(app)

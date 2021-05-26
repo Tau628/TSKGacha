@@ -38,6 +38,11 @@ def trades():
 
         db['trades'].append(trade)
 
+    elif button.split('-')[0] == 'revoke':
+      trade_id = int(button.split('-')[1])
+      flash('Trade revoked.', category='success')
+      db['trades'][trade_id]['status'] = 'revoked'
+
     elif button.split('-')[0] == 'reject':
       trade_id = int(button.split('-')[1])
       flash('Trade rejected.', category='success')

@@ -95,6 +95,10 @@ This is the trade page.
     {{ -trade['coins'] }} Koins<br>
   {% endif %}
   <br>
+
+  <form method="POST">
+    <button type="submit" class="btn btn-primary" name="submit_button" value="revoke-{{i}}">Revoke Trade</button>
+  </form>
 {% endfor %}
 
 
