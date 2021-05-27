@@ -1,0 +1,31 @@
+{% extends "base.html" %} {% block title %}Remove a character{% endblock %}
+{% block content %}
+
+You pulled a new character, but your roster was already full! You must either remove a character to make space or discard {{ pulled_char[1]['name'] }}.<br>
+<form method="POST">
+{% for i,c in characters %}
+    <div class="form-check">
+      <input 
+        class="form-check-input"
+        type="radio"
+        name="characterRemoving"
+        value="{{ 'char-' + i }}" 
+      ><label class="form-check-label" for="characterRemoving">{{ c['name'] }}</label>
+    </div>
+{% endfor %}
+    <div class="form-check">
+      <input 
+        class="form-check-input"
+        type="radio"
+        name="characterRemoving"
+        value="char-pulled" 
+      ><label class="form-check-label" for="characterRemoving"><i>{{ pulled_char[1]['name'] }}</i></label>
+    </div>
+  <br>
+  <button type="submit" class="btn btn-primary" name="submit_button" value="remove">Remove</button>
+</form>
+
+{% endblock %}
+
+
+

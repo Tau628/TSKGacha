@@ -8,34 +8,6 @@ from blueprints.pull import pullBP
 from blueprints.other import otherBP
 from blueprints.trades import tradesBP
 
-#db['trades'] = []
-#Aspect radio for art: 1080:1920
-
-func = lambda x: 1
-
-#test
-banners = {
-  'base' : {
-    'image' : 'https://gamepress.gg/feheroes/sites/fireemblem/files/2021-04/LegendarySigurdBanner.PNG',
-    'name' : 'Default',
-    'rates' : {1: 30, 2: 25, 3: 22, 4: 16, 5: 7},
-    'weights' : "lambda char: 1",
-    'active' : True,
-    'description' : "The basic banner with default rates."
-  },
-  'test_banner' : {
-    'image' : 'https://gamepress.gg/feheroes/sites/fireemblem/files/2021-05/Forces%20of%20Will.PNG',
-    'name' : 'The Last Airbender',
-    'rates' : None,
-    'weights' : "lambda char: 1000 if char['series']=='Avatar: The Last Airbender' else 1",
-    'active' : True,
-    'description' : "Rate up for all Avatar: The Last Airbender characters."
-  }
-}
-db['banners'] = banners
-
-
-
 app = Flask(__name__)
 login_manager.init_app(app)
 app.register_blueprint(playersBP)

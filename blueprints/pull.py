@@ -106,15 +106,15 @@ def banners():
 
 
   player = db['players'][current_user.id]
-  can_pull = player['pulled_character'] is None
+  
 
   char_ids = database.to_primitive(player['roster']) 
   characters = [(str(ri), db['characters'][ci]) for ri,ci in enumerate(char_ids)]
-  if not can_pull:
-    pulled_char = (player['pulled_character'], db['characters'][player['pulled_character']])
-  else:
-    pulled_char = None
-
   coins=player['coins']
 
-  return render_template('pull/banners.html', user = current_user, can_pull = can_pull, coins=coins, coinstr = f"Pull: {coins}->{coins-1}", characters=characters, pulled_char = pulled_char, banners = db['banners'])
+  can_pull = player['pulled_character'] is None
+  if can_pull:
+    return render_template('pull/banners.html', user = current_user, coins=coins, coinstr = f"Pull: {coins}->{coins-1}", banners = db['banners'])
+  else:
+    pulled_char = (player['pulled_character'], db['characters'][player['pulled_character']])
+    return render_template('pull/already_pulled.html', user = current_user, characters=characters, pulled_char = pulled_char)
