@@ -14,7 +14,8 @@ def character_page(chr_ind):
 @charactersBP.route('/')
 def characters():
   if current_user.is_authenticated:
-    char_list = [(url_for('charactersBP.character_page', chr_ind = i), i, char['name']) for i,char in db['characters'].items()]
+    char_list = [(url_for('charactersBP.character_page', chr_ind = i), i, char['name']) for i,char in sorted(db['characters'].items(), key=lambda x:int(x[0]))]
+    
     return render_template('characters/characters.html', user = current_user, char_list = char_list)
   else:
     return redirect(url_for('otherBP.home'))
