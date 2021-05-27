@@ -1,10 +1,21 @@
 {% extends "base.html" %} {% block title %}Pulling{% endblock %} {% block content %}
-<h3>TSK Gotcha</h3>
-This is the pull page.
+<h3>Pull New Characters!</h3>
 {% if can_pull %}
-<form method="POST">
-  <button type="submit" class="btn btn-primary" name="submit_button" value="pull">Pull</button>
-</form>
+
+<center>
+{% for bname, banner in banners.items() %}
+  {% if banner['active'] %}
+    <h2>{{ banner['name'] }}</h2>
+
+    <img src="{{banner['image']}}"></img><br>
+    {{ banner['description'] }}
+
+    <form method="POST">
+      <button type="submit" {{'disabled' if coins==0 else ''}} class="btn btn-primary" name="submit_button" value="pull-{{bname}}">{{ coinstr if coins>0 else 'Not enough coins.' }}</button>
+    </form>
+  {% endif %}
+{% endfor %}
+</center>
 
 {% else %}
 You pulled <b>{{ pulled_char[1]['name'] }}</b>.<br>

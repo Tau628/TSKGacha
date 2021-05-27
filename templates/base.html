@@ -18,11 +18,6 @@
     <title>{% block title %}Home{% endblock %}</title>
   </head>
   <body>
-    <style>
-    body {
-      background-image: url('https://cdn.discordapp.com/attachments/841495809069154315/846939082205954058/Robert_Kennedys_Day_Off.png');
-    }
-    </style>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <button
         class="navbar-toggler"
@@ -51,7 +46,6 @@
         </div>
       </div>
     </nav>
-    <p style="color:black">User: {{ user.id }}</p>
     
 
     {% with messages = get_flashed_messages(with_categories=true) %} {% if
@@ -71,6 +65,8 @@
       </button>
     </div>
     {% endif %} {% endfor %} {% endif %} {% endwith %}
+
+    <p style="color:black">User: {{ user.id }}</p>
 
     <div class="container">{% block content %} {% endblock %}</div>
     <script

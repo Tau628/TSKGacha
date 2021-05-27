@@ -9,7 +9,7 @@ def character_page(chr_ind):
   if current_user.is_authenticated:
     return render_template('characters/character_page.html', user = current_user, character = database.to_primitive(db['characters'][chr_ind]), chr_ind = chr_ind)
   else:
-    return redirect(url_for('home'))
+    return redirect(url_for('otherBP.home'))
 
 @charactersBP.route('/')
 def characters():
