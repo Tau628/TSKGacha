@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, redirect, url_for, request, flash
+from flask import Blueprint, render_template, redirect, url_for, request, flash, jsonify
 from replit import db, database
 from flask_login import current_user
 
@@ -28,6 +28,7 @@ def home():
 @otherBP.route('/database')
 def database_view():
   database = {k:recurse_prim(v) for k,v in db.items()}
+  #database = {k:v for k,v in db.items()}
   return render_template('database_view.html', user = current_user, database = database)
 
 
