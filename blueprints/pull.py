@@ -62,8 +62,8 @@ def pickChar(banner_name=None):
   return np.random.choice(list(viable_characters.keys()), p=c_weights)
 
 
-@pullBP.route('/pull', methods=['GET','POST'])
-def pull():
+@pullBP.route('/banners', methods=['GET','POST'])
+def banners():
   
   if request.method == 'POST':
     player = db['players'][current_user.id]
@@ -88,6 +88,8 @@ def pull():
           db['players'][current_user.id]['pulled_character'] = new_char
 
         db['players'][current_user.id]['coins'] -= 1
+
+        return render_template('pull/pulled.html', user = current_user, character = database.to_primitive(db['characters'][new_char]), chr_ind = new_char)
 
     elif button == 'remove':
       removing = request.form.get('characterRemoving')
@@ -115,4 +117,4 @@ def pull():
 
   coins=player['coins']
 
-  return render_template('pull/pull.html', user = current_user, can_pull = can_pull, coins=coins, coinstr = f"Pull: {coins}->{coins-1}", characters=characters, pulled_char = pulled_char, banners = db['banners'])
+  return render_template('pull/banners.html', user = current_user, can_pull = can_pull, coins=coins, coinstr = f"Pull: {coins}->{coins-1}", characters=characters, pulled_char = pulled_char, banners = db['banners'])
