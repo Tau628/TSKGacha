@@ -63,8 +63,7 @@ def pickChar(banner_name=None):
 
 
 @pullBP.route('/banners', methods=['GET','POST'])
-def banners():
-  
+def banners():  
   if request.method == 'POST':
     player = db['players'][current_user.id]
     button = request.form.get('submit_button')

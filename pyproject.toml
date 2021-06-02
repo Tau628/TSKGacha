@@ -11,6 +11,7 @@ replit = "^3.0.0"
 werkzeug = "^1.0.1"
 flask-login = "^0.5.0"
 repl = "^1.0"
+pytz = "^2021.1"
 
 [tool.poetry.dev-dependencies]
 

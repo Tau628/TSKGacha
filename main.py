@@ -27,6 +27,11 @@ with open('./sampledatabase.json') as f:
 for k, v in data.items():
   db[k] = v
 '''
+import time
+for player in db['players'].keys():
+  #db['players'][player]['last_check_in'] = int(time.time())
+  pass
+
 
 if __name__ == '__main__':
   app.secret_key = 'super secret key'

@@ -1,11 +1,35 @@
-from flask import Blueprint, render_template, redirect, url_for
+import datetime
+import time
+
+import pytz
+
+from flask import Blueprint, render_template, redirect, url_for, request, flash
 from replit import db, database
 from flask_login import current_user
 
 playersBP = Blueprint('playersBP', __name__, url_prefix='/players')
 
-@playersBP.route('/<ply_ind>')
+est = pytz.timezone('US/Eastern')
+
+@playersBP.route('/<ply_ind>', methods=['GET','POST'])
 def player_page(ply_ind):
+
+  if request.method == 'POST':
+    last_check_in = db['players'][current_user.id]['last_check_in']
+    now = int(time.time())
+
+    prev = datetime.datetime.utcfromtimestamp(last_check_in)
+    prev = est.localize(prev)
+    curr = datetime.datetime.utcfromtimestamp(now)
+    curr = est.localize(curr)
+
+    diff = (curr.date()-prev.date()).days
+
+    db['players'][current_user.id]['last_check_in'] = now
+    db['players'][current_user.id]['coins'] += diff
+
+    flash(f'You have redeemed {diff} Koins.', category='success')
+
   if current_user.is_authenticated:
     owned_characters = [(char_id, db['characters'][char_id]) for char_id in db['players'][ply_ind]['roster']]
 
