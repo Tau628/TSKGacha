@@ -29,8 +29,8 @@ for k, v in data.items():
 '''
 import time
 for player in db['players'].keys():
-  #db['players'][player]['last_check_in'] = int(time.time())
-  pass
+  if 'last_check_in' not in db['players'][player]:
+    db['players'][player]['last_check_in'] = int(time.time())
 
 
 if __name__ == '__main__':
