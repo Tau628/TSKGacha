@@ -6,9 +6,11 @@ import numpy as np
 pullBP = Blueprint('pullBP', __name__)
 
 def getListOwnedChars():
-  characters = []
-  for p in db['players'].values():
-    characters += p['roster']
+  characters = {}
+  for pname, p in db['players'].items():
+    for cind in p['roster']:
+      characters[cind] = pname
+    #characters += p['roster']
   return characters
 
 def pickChar(banner_name=None):
@@ -19,7 +21,7 @@ def pickChar(banner_name=None):
     banner = db['banners'][banner_name]
 
   #Gets a list of all owned characters
-  owned_chars = getListOwnedChars()
+  owned_chars = getListOwnedChars().keys()
   
   #Gets a list of characters filtering out the characters already owned
   viable_characters = {k:v for k,v in db['characters'].items() if k not in owned_chars}
