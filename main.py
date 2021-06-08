@@ -7,6 +7,7 @@ from blueprints.auth import authBP, login_manager
 from blueprints.pull import pullBP
 from blueprints.other import otherBP
 from blueprints.trades import tradesBP
+from blueprints.images import imagesBP
 
 app = Flask(__name__)
 login_manager.init_app(app)
@@ -16,6 +17,7 @@ app.register_blueprint(authBP)
 app.register_blueprint(pullBP)
 app.register_blueprint(otherBP)
 app.register_blueprint(tradesBP)
+app.register_blueprint(imagesBP)
 
 #Loads in database from JSON
 '''
