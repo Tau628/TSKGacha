@@ -22,15 +22,12 @@ app.register_blueprint(tradesBP)
 import json
 for k in db.keys():
   del db[k]
-with open('./sampledatabase.json') as f:
+with open('./sample.json') as f:
   data = json.load(f)
 for k, v in data.items():
   db[k] = v
 '''
-import time
-for player in db['players'].keys():
-  if 'last_check_in' not in db['players'][player]:
-    db['players'][player]['last_check_in'] = int(time.time())
+
 
 
 if __name__ == '__main__':

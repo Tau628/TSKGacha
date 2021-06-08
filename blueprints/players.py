@@ -35,7 +35,7 @@ def player_page(ply_ind):
 
     return render_template('players/player_page.html', user = current_user, player = (ply_ind, database.to_primitive(db['players'][ply_ind])), owned_characters = owned_characters)
   else:
-    return redirect(url_for('home'))
+    return redirect(url_for('otherBP.home'))
 
 @playersBP.route('/')
 def players():
@@ -43,5 +43,5 @@ def players():
     player_names = db['players'].keys()
     return render_template('players/players.html', user = current_user, player_names = [(url_for('playersBP.player_page', ply_ind = name), name) for name in player_names])
   else:
-    return redirect(url_for('home'))
+    return redirect(url_for('otherBP.home'))
 
