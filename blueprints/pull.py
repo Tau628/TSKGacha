@@ -5,16 +5,19 @@ import numpy as np
 
 pullBP = Blueprint('pullBP', __name__)
 
+#Generates a dictionary of owned characters
+#Keys are the character IDs; values are the users that own them
 def getListOwnedChars():
   characters = {}
   for pname, p in db['players'].items():
     for cind in p['roster']:
       characters[cind] = pname
-    #characters += p['roster']
   return characters
 
+#Function to randomly select a characters
+#Takes in a banner name as an argument, which effects rates
 def pickChar(banner_name=None):
-
+  #Gets the banner info
   if banner_name is None:
     banner = db['banners']['base']
   else:
@@ -29,11 +32,12 @@ def pickChar(banner_name=None):
     print('There are no characters at all')
     return None
 
-  #Finds out if any rarities have no characters
+  #Gets the rates for each banner
   rarities = banner['rates']
   if rarities is None:
     rarities = db['banners']['base']['rates']
 
+  #Checks if a rarity has no valid characters to select
   valid_rarities = {
     r : 
     len(list(filter(
@@ -63,17 +67,21 @@ def pickChar(banner_name=None):
 
   return np.random.choice(list(viable_characters.keys()), p=c_weights)
 
-
+#Page with all the banners
 @pullBP.route('/banners', methods=['GET','POST'])
 def banners():  
   if request.method == 'POST':
+    #Gets the info about the player and the button press
     player = db['players'][current_user.id]
     button = request.form.get('submit_button')
 
+    #Checks if the button press was a pull
     if button.split('-')[0] == 'pull':
       banner_name = button.split('-')[1]
+      cost = db['banners'][banner_name]['cost']
 
-      if player['coins'] <= 0:
+      #Checks if the player has enough coins
+      if player['coins']-cost < 0:
         flash("You don't have enough coins.", category='error')
 
       else:
@@ -88,7 +96,7 @@ def banners():
           new_char = pickChar(banner_name)
           db['players'][current_user.id]['pulled_character'] = new_char
 
-        db['players'][current_user.id]['coins'] -= 1
+        db['players'][current_user.id]['coins'] -= cost
 
         return render_template('pull/pulled.html', user = current_user, character = database.to_primitive(db['characters'][new_char]), chr_ind = new_char)
 

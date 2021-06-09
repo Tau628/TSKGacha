@@ -7,12 +7,13 @@ import time
 authBP = Blueprint('authBP', __name__)
 
 login_manager = LoginManager()
-#login_manager.init_app(web_site)
 
+#Defines a simple class to keep track of users
 class User(UserMixin):
   def __init__(self, username):
     self.id = username
 
+#Loads user
 @login_manager.user_loader
 def load_user(user_id):
   if user_id in db['players']:
@@ -20,7 +21,7 @@ def load_user(user_id):
   else:
     return None
 
-
+#Sign up page
 @authBP.route('/signup', methods=['GET','POST'])
 def sign_up():
   if request.method == 'POST':
@@ -61,6 +62,7 @@ def sign_up():
 
   return render_template('authentication/sign_up.html', user = current_user)
 
+#Log in page
 @authBP.route('/login', methods=['GET','POST'])
 def login():
   if request.method == 'POST':
@@ -85,8 +87,8 @@ def login():
           
   return render_template('authentication/login.html', user = current_user)
 
+#Log out page
 @authBP.route('/logout')
-#@login_required
 def logout():
     logout_user()
     return redirect(url_for('authBP.login'))

@@ -19,20 +19,16 @@ app.register_blueprint(otherBP)
 app.register_blueprint(tradesBP)
 app.register_blueprint(imagesBP)
 
-db['characters']['104']['image'] = [{"url": "https://cdn.discordapp.com/attachments/846922804074643467/851621760985727046/Shantae.png", "portrait": (300,100,800,600)}]
-
 #Loads in database from JSON
 '''
 import json
 for k in db.keys():
   del db[k]
-with open('./sample.json') as f:
+with open('./sampledatabase.json') as f:
   data = json.load(f)
 for k, v in data.items():
   db[k] = v
 '''
-
-
 
 if __name__ == '__main__':
   app.secret_key = 'super secret key'
