@@ -7,7 +7,7 @@
 <h3>Roster:</h3>
 {% for i, char in owned_characters %}
   <a href="{{url_for('charactersBP.character_page', chr_ind=i)}}">
-    <img src="https://www.smashbros.com/assets_v2/img/fighter/mario/main.png" height="50"></img>
+    <img src="{{url_for('imagesBP.characterArt', arttype='mini', charID=i, artID=0)}}" height="100"></img>
     {{i}}. {{char['name']}} ({{char['series']}})<br>
   </a>
 {% endfor %}

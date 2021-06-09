@@ -3,6 +3,8 @@
 <h3>{{ character['rarity'] }}</h3>
 {{ character['series'] }}<br>
 
+<img src="{{url_for('imagesBP.characterArt', arttype='regular', charID=chr_ind, artID=0)}}" height="500"></img>
+
 {% if owner is not none %}
   Owned by <a href="{{ url_for('playersBP.player_page', ply_ind = owner) }}"> {{owner}}</a>
 {% endif %}

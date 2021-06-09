@@ -25,29 +25,34 @@ def characterArt(arttype, charID, artID):
   else:
     return
 
+  #Gets all the necessary data
   character = db['characters'][charID]
   name = character['name']
   rarity = character['rarity']
   art = character['images'][int(artID)]
   url = art['url']
-  crop = tuple(art['portrait'])
+  crop = art['portrait']
 
+  #Gets all of the images that it's going to work with
   img = Image.new('RGB', size)
   artwork = Image.open(requests.get(url, stream=True).raw)
   border = Image.open(f"images/{arttype}_frames/rarity{rarity}.png")
 
-  if arttype == 'mini':
-    artwork = artwork.crop(crop)
+  #If it's a mini art, crop the image
+  if arttype == 'mini' and crop is not None:
+    artwork = artwork.crop(tuple(crop))
 
+  #Scale the artwork to the correct size and combine the artwork and the frame
   artwork = artwork.resize(size)
   img.paste(artwork, (0,0))
   img.paste(border, (0,0), mask=border)
   
+  #If it's a regular art, add the name of the character
   if arttype == 'regular':
-    title_font = ImageFont.truetype('comic.ttf', 100)
+    title_font = ImageFont.truetype('fonts/broadway.ttf', 100)
     title_text = name
     draw = ImageDraw.Draw(img)
-    draw.text((450,1350), title_text, (0, 0, 0), font=title_font)
+    draw.text((450,1370), title_text, (0, 0, 0), font=title_font)
 
   return serve_pil_image(img)
 

@@ -25,6 +25,24 @@ def saveDatabase(filename):
   with open(filename, "w") as outfile: 
       json.dump(data, outfile, sort_keys=True, indent=4)
 
+
+def loadArtwork():
+  with open(f'./TEMP.json') as f:
+    data = json.load(f)
+
+  for name, art in data.items():
+
+    for k,v in db['characters'].items():
+      if v['name'] == name:
+        db['characters'][k]['images'] = [
+          {'NSFW': False, 'portrait': None, 'url': art}
+        ]
+        break
+
 print('Start')
+
 loadDatabase('sampledatabase.json')
+
+
+
 print('Done')
