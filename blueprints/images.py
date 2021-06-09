@@ -21,7 +21,7 @@ def characterArt(arttype, charID, artID):
   if arttype == 'regular':
     size = (1106, 1482)
   elif arttype == 'mini':
-    size = (742, 786)
+    size = (665, 691)
   else:
     return
 
