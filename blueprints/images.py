@@ -54,6 +54,9 @@ def characterArt(arttype, charID, artID):
     draw = ImageDraw.Draw(img)
     draw.text((450,1370), title_text, (0, 0, 0), font=title_font)
 
+  if arttype == 'mini':
+    img = img.resize((100,100))
+
   return serve_pil_image(img)
 
 @imagesBP.route('/imageTesting')
