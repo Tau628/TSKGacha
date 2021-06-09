@@ -9,12 +9,20 @@ from .pull import getListOwnedChars
 @charactersBP.route('/<chr_ind>')
 def character_page(chr_ind):
   if current_user.is_authenticated:
+    
+    #Determines if a characer is owned
     owned = getListOwnedChars()
     if chr_ind in owned:
       owner = owned[chr_ind]
     else:
       owner = None
-    return render_template('characters/character_page.html', user = current_user, character = database.to_primitive(db['characters'][chr_ind]), chr_ind = chr_ind, owner=owner)
+
+    character = database.to_primitive(db['characters'][chr_ind])
+    rarity = db['rarity_names'][str(character['rarity'])]
+    rarity += " " + "☆"*character['rarity']
+
+    return render_template('characters/character_page.html', user = current_user, character = character, chr_ind = chr_ind, owner=owner, rarity = rarity)
+  
   else:
     return redirect(url_for('otherBP.home'))
 
