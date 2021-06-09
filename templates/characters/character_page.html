@@ -2,6 +2,10 @@
 <h2>{{ chr_ind }}. {{ character['name'] }} <i>({{ character['series'] }})</i></h2>
 <h3>{{ rarity }}</h3>
 
+{% if character['description'] is not none %}
+  {{character['description']}}<br>
+{% endif%}
+
 {% if owner is not none %}
   Owned by <a href="{{ url_for('playersBP.player_page', ply_ind = owner) }}"> {{owner}}</a><br>
 {% endif %}

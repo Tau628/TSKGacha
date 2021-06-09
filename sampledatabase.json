@@ -27,7 +27,7 @@
     },
     "characters": {
         "1": {
-            "description": null,
+            "description": "A vampire queen that holds a lifetime grudge against fry stealers.",
             "images": [
                 {
                     "NSFW": false,
@@ -72,7 +72,7 @@
             "suggested_by": null
         },
         "101": {
-            "description": null,
+            "description": "Redheaded drummer of Sex Bob-omb whose name may or may not be a homage to Kim Gordon of Sonic Youth.",
             "images": [
                 {
                     "NSFW": false,
@@ -272,7 +272,7 @@
             "suggested_by": null
         },
         "113": {
-            "description": null,
+            "description": "The embodiment of opulence and the most kingly king you'll ever meet. Too bad shiniest armor is no basis for a system of government.",
             "images": [
                 {
                     "NSFW": false,
@@ -377,7 +377,7 @@
             "suggested_by": null
         },
         "12": {
-            "description": null,
+            "description": "A master of the boomerang with a lady from every nation, also a complete and utter idiot.",
             "images": [
                 {
                     "NSFW": false,
@@ -427,7 +427,7 @@
             "suggested_by": null
         },
         "122": {
-            "description": null,
+            "description": "The animated corpse parts of a catgirl and visual proof that anything can be a waifu.",
             "images": [
                 {
                     "NSFW": false,
@@ -442,7 +442,7 @@
             "suggested_by": null
         },
         "123": {
-            "description": null,
+            "description": "the Echidna",
             "images": [
                 {
                     "NSFW": false,
@@ -457,7 +457,7 @@
             "suggested_by": null
         },
         "124": {
-            "description": null,
+            "description": "the Hedgehog",
             "images": [
                 {
                     "NSFW": false,
@@ -472,7 +472,7 @@
             "suggested_by": null
         },
         "125": {
-            "description": null,
+            "description": "First name miles, last name Fox.",
             "images": [
                 {
                     "NSFW": false,
@@ -487,7 +487,7 @@
             "suggested_by": null
         },
         "126": {
-            "description": null,
+            "description": "the Cat",
             "images": [
                 {
                     "NSFW": false,
@@ -502,7 +502,7 @@
             "suggested_by": null
         },
         "127": {
-            "description": null,
+            "description": "the Bat",
             "images": [
                 {
                     "NSFW": false,
@@ -547,7 +547,7 @@
             "suggested_by": null
         },
         "13": {
-            "description": null,
+            "description": "Leader of the Kyoshi Warriors that was domesticated by the Master of the Boomerang's charming misogyny.",
             "images": [
                 {
                     "NSFW": false,
@@ -562,7 +562,7 @@
             "suggested_by": null
         },
         "130": {
-            "description": null,
+            "description": "Not the Grey's Anatomy one",
             "images": [
                 {
                     "NSFW": false,
@@ -577,7 +577,7 @@
             "suggested_by": null
         },
         "131": {
-            "description": null,
+            "description": "Staaay Fresh! ",
             "images": [
                 {
                     "NSFW": false,
@@ -592,7 +592,7 @@
             "suggested_by": null
         },
         "132": {
-            "description": null,
+            "description": "Like tupac but a squid girl.",
             "images": [
                 {
                     "NSFW": false,
@@ -607,7 +607,7 @@
             "suggested_by": null
         },
         "133": {
-            "description": null,
+            "description": "Normal kpop but squid girl.",
             "images": [
                 {
                     "NSFW": false,
@@ -712,7 +712,7 @@
             "suggested_by": null
         },
         "14": {
-            "description": null,
+            "description": "The greatest earthbender to ever live. Eat your heart out Kyoshi",
             "images": [
                 {
                     "NSFW": false,
@@ -787,7 +787,7 @@
             "suggested_by": null
         },
         "144": {
-            "description": null,
+            "description": "The original face of Citypop, who stopped an alien genocide with her righteous chops",
             "images": [
                 {
                     "NSFW": false,
@@ -832,7 +832,7 @@
             "suggested_by": null
         },
         "147": {
-            "description": null,
+            "description": "President of Nintendo America.",
             "images": [
                 {
                     "NSFW": false,
@@ -847,7 +847,7 @@
             "suggested_by": null
         },
         "148": {
-            "description": null,
+            "description": "Still waiting on his year.",
             "images": [
                 {
                     "NSFW": false,
@@ -862,7 +862,7 @@
             "suggested_by": null
         },
         "149": {
-            "description": null,
+            "description": "Mario Mario of the Mario Bros.",
             "images": [
                 {
                     "NSFW": false,
@@ -892,7 +892,7 @@
             "suggested_by": null
         },
         "150": {
-            "description": null,
+            "description": "The antithesis of feminism.",
             "images": [
                 {
                     "NSFW": false,
@@ -907,7 +907,7 @@
             "suggested_by": null
         },
         "151": {
-            "description": null,
+            "description": "The vanguard of emysphillia.",
             "images": [
                 {
                     "NSFW": false,
@@ -922,7 +922,7 @@
             "suggested_by": null
         },
         "152": {
-            "description": null,
+            "description": "Blond tsundere... how original.",
             "images": [
                 {
                     "NSFW": false,
@@ -937,12 +937,12 @@
             "suggested_by": null
         },
         "153": {
-            "description": null,
+            "description": "Redhead Rei clone with more booba than depth.",
             "images": [
                 {
                     "NSFW": false,
                     "portrait": null,
-                    "url": "http://oyster.ignimgs.com/mediawiki/apis.ign.com/xenoblade-chronicles-2/1/13/Switch_XenobladeChronicles2_E32017_character_02.jpg"
+                    "url": "https://static.wikia.nocookie.net/xenoblade/images/e/ee/Pyra_pic.png/revision/latest?cb=20200722214534"
                 }
             ],
             "name": "Pyra",
@@ -1092,7 +1092,7 @@
                 {
                     "NSFW": false,
                     "portrait": null,
-                    "url": "https://fireemblemwiki.org/w/images/c/ce/FETH_Edelgard_02.png"
+                    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/54/Fire_Emblem_Heroes_Edelgard.png/220px-Fire_Emblem_Heroes_Edelgard.png"
                 }
             ],
             "name": "Edelgard",
@@ -1177,7 +1177,7 @@
             "suggested_by": null
         },
         "3": {
-            "description": null,
+            "description": "An asian warrior with noodles for hair and dragon arms... okay.",
             "images": [
                 {
                     "NSFW": false,
@@ -1207,7 +1207,7 @@
             "suggested_by": null
         },
         "31": {
-            "description": null,
+            "description": "The ass kicker.",
             "images": [
                 {
                     "NSFW": false,
@@ -1222,7 +1222,7 @@
             "suggested_by": null
         },
         "32": {
-            "description": null,
+            "description": "Despite his name, he's a hero with a black belt in getting his ass kicked.",
             "images": [
                 {
                     "NSFW": false,
@@ -1312,7 +1312,7 @@
             "suggested_by": null
         },
         "38": {
-            "description": null,
+            "description": "Palutena is like Pit's mom, but Medusa is his mommy.",
             "images": [
                 {
                     "NSFW": false,
@@ -1327,7 +1327,7 @@
             "suggested_by": null
         },
         "39": {
-            "description": null,
+            "description": "A lightning user and the least recognizable of Pit's harem girls",
             "images": [
                 {
                     "NSFW": false,
@@ -1357,7 +1357,7 @@
             "suggested_by": null
         },
         "40": {
-            "description": null,
+            "description": "A paragon of balance and the loyalest of Palutena's angels.",
             "images": [
                 {
                     "NSFW": false,
@@ -1372,7 +1372,7 @@
             "suggested_by": null
         },
         "41": {
-            "description": null,
+            "description": "Edgy Pit.",
             "images": [
                 {
                     "NSFW": false,
@@ -1507,7 +1507,7 @@
             "suggested_by": null
         },
         "5": {
-            "description": null,
+            "description": "If white bread could bounce.",
             "images": [
                 {
                     "NSFW": false,
@@ -1537,7 +1537,7 @@
             "suggested_by": null
         },
         "51": {
-            "description": null,
+            "description": "An undead Lich who coincidentally resembles a buxom young woman.",
             "images": [
                 {
                     "NSFW": false,
@@ -1597,7 +1597,7 @@
             "suggested_by": null
         },
         "55": {
-            "description": null,
+            "description": "A lolitaesque imp of the twili race whose flirtatious nature left an unfortunate impression on many young gamers",
             "images": [
                 {
                     "NSFW": false,
@@ -1612,7 +1612,7 @@
             "suggested_by": null
         },
         "56": {
-            "description": null,
+            "description": "The first time a zora has been a legitimate contender for best girl. (I know what I said Ruto stans)*",
             "images": [
                 {
                     "NSFW": false,
@@ -1627,7 +1627,7 @@
             "suggested_by": null
         },
         "57": {
-            "description": null,
+            "description": "A gerudo champion and the embodiment of the phrase \"death by Snu Snu\".",
             "images": [
                 {
                     "NSFW": false,
@@ -1642,7 +1642,7 @@
             "suggested_by": null
         },
         "58": {
-            "description": null,
+            "description": "The ultimate fate of a Kokiri Kid that leaves home is to wander the forest as a wooden skull-like being and never be added to smash.",
             "images": [
                 {
                     "NSFW": false,
@@ -1687,7 +1687,7 @@
             "suggested_by": null
         },
         "60": {
-            "description": null,
+            "description": "Her name roughly translates to bear-tiger which is the most badass name for a little girl I've ever seen.",
             "images": [
                 {
                     "NSFW": false,
@@ -1762,7 +1762,7 @@
             "suggested_by": null
         },
         "65": {
-            "description": null,
+            "description": "The only time princess peach has been connected to something remotely interesting.",
             "images": [
                 {
                     "NSFW": false,
@@ -2122,7 +2122,7 @@
             "suggested_by": null
         },
         "87": {
-            "description": null,
+            "description": "The robotic sister of Aigis, Metis is living proof that when one door closes, another one opens.",
             "images": [
                 {
                     "NSFW": false,
@@ -2137,7 +2137,7 @@
             "suggested_by": null
         },
         "88": {
-            "description": null,
+            "description": "Humanity's companion.",
             "images": [
                 {
                     "NSFW": false,
@@ -2152,7 +2152,7 @@
             "suggested_by": null
         },
         "89": {
-            "description": null,
+            "description": "The Incompentent Incel of Inaba.",
             "images": [
                 {
                     "NSFW": false,
@@ -2212,7 +2212,7 @@
             "suggested_by": null
         },
         "92": {
-            "description": null,
+            "description": "The frontier brain with a love for Kitsune no me.",
             "images": [
                 {
                     "NSFW": false,
@@ -2227,7 +2227,7 @@
             "suggested_by": null
         },
         "93": {
-            "description": null,
+            "description": "The flying type gym leader whose more of a walking midriff fetish than a person.",
             "images": [
                 {
                     "NSFW": false,
@@ -2242,7 +2242,7 @@
             "suggested_by": null
         },
         "94": {
-            "description": null,
+            "description": "A poweful psychic who's major power is the ability to completelty change her appearence every tournament.",
             "images": [
                 {
                     "NSFW": false,
@@ -2272,7 +2272,7 @@
             "suggested_by": null
         },
         "96": {
-            "description": null,
+            "description": "She says jeepers and is best girl.",
             "images": [
                 {
                     "NSFW": false,
@@ -2287,7 +2287,7 @@
             "suggested_by": null
         },
         "97": {
-            "description": null,
+            "description": "He says fuck.",
             "images": [
                 {
                     "NSFW": false,
@@ -2302,7 +2302,7 @@
             "suggested_by": null
         },
         "98": {
-            "description": null,
+            "description": "He says zoinks.",
             "images": [
                 {
                     "NSFW": false,
@@ -2317,7 +2317,7 @@
             "suggested_by": null
         },
         "99": {
-            "description": null,
+            "description": "She says jinkies.",
             "images": [
                 {
                     "NSFW": false,
@@ -2333,16 +2333,28 @@
         }
     },
     "players": {
+        "Nick": {
+            "coins": 1,
+            "last_check_in": 1623262121,
+            "max_roster": 3,
+            "password": "sha256$aXNF787X$2ee00a4c9c0f14710bb17c8648301ced789036a8079c3d43bab223e3e0520d9e",
+            "pulled_character": null,
+            "roster": [
+                "25",
+                "112",
+                "75"
+            ]
+        },
         "tau628": {
-            "coins": 9,
+            "coins": 1,
             "last_check_in": 1623249919,
             "max_roster": 3,
             "password": "sha256$pwED5ogV$62b347e625ed7af623f71cf7972fe2b62097fe5f48d10bb68824ee11fd8f1556",
             "pulled_character": null,
             "roster": [
-                "25",
                 "33",
-                "113"
+                "113",
+                "41"
             ]
         }
     },
@@ -2357,10 +2369,14 @@
             "suggested_by": null
         },
         {
-            "approval_votes": {},
+            "approval_votes": {
+                "Nick": "Yes"
+            },
             "images": [],
             "name": "Duo",
-            "rarity_votes": {},
+            "rarity_votes": {
+                "Nick": "3"
+            },
             "series": "Duolingo",
             "status": "pending",
             "suggested_by": null
@@ -2373,5 +2389,18 @@
         "4": "Based and Redpilled",
         "5": "Fully Pogged"
     },
-    "trades": []
+    "trades": [
+        {
+            "coins": 0,
+            "giving": [
+                "25"
+            ],
+            "instigator": "tau628",
+            "partner": "Nick",
+            "receiving": [
+                "41"
+            ],
+            "status": "accepted"
+        }
+    ]
 }

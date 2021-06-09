@@ -47,14 +47,11 @@ def loadDescriptions():
 
     for k,v in db['characters'].items():
       if v['name'] == name:
-        db['characters']['description'] = desc
+        db['characters'][k]['description'] = desc
         break
 
 print('Start')
 
-#loadDescriptions()
-loadDatabase('sampledatabase.json')
-
-
+saveDatabase('sample.json')
 
 print('Done')
