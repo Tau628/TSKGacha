@@ -402,7 +402,7 @@
                         800,
                         600
                     ],
-                    "url": "https://i.imgur.com/AgJ1BTP.png"
+                    "url": "https://www.newgrounds.com/dump/draw/ba17a7e84de9bc1c71f252f6f5f0c228"
                 }
             ],
             "name": "Squigly",
@@ -2334,14 +2334,15 @@
     },
     "players": {
         "tau628": {
-            "coins": 1,
+            "coins": 9,
             "last_check_in": 1623249919,
             "max_roster": 3,
             "password": "sha256$pwED5ogV$62b347e625ed7af623f71cf7972fe2b62097fe5f48d10bb68824ee11fd8f1556",
             "pulled_character": null,
             "roster": [
                 "25",
-                "14"
+                "33",
+                "113"
             ]
         }
     },

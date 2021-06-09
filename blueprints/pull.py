@@ -127,9 +127,11 @@ def banners():
   characters = [(str(ri), db['characters'][ci]) for ri,ci in enumerate(char_ids)]
   coins=player['coins']
 
+  #coin_strings = f"Pull: {coins}->{coins-cost}"
+
   can_pull = player['pulled_character'] is None
   if can_pull:
-    return render_template('pull/banners.html', user = current_user, coins=coins, coinstr = f"Pull: {coins}->{coins-1}", banners = db['banners'])
+    return render_template('pull/banners.html', user = current_user, coins=coins, banners = db['banners'])
   else:
     pulled_char = (player['pulled_character'], db['characters'][player['pulled_character']])
     return render_template('pull/already_pulled.html', user = current_user, characters=characters, pulled_char = pulled_char)

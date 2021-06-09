@@ -10,7 +10,19 @@
     {{ banner['description'] }}
 
     <form method="POST">
-      <button type="submit" {{'disabled' if coins==0 else ''}} class="btn btn-primary" name="submit_button" value="pull-{{bname}}">{{ coinstr if coins>0 else 'Not enough coins.' }}</button>
+      <button type="submit"
+        {{'disabled' if coins-banner['cost']<0 else ''}}
+        class="btn btn-primary"
+        name="submit_button"
+        value="pull-{{bname}}">
+        {% if coins-banner['cost']>=0 %}
+          Pull<br>
+          {{coins}} → {{coins-banner['cost']}}
+        {% else %}
+          Not enough Koins<br>
+          Costs {{banner['cost']}}
+        {% endif %}  
+      </button>
     </form>
   {% endif %}
 {% endfor %}

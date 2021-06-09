@@ -39,8 +39,20 @@ def loadArtwork():
         ]
         break
 
+def loadDescriptions():
+  with open(f'./TEMP.json') as f:
+    data = json.load(f)
+
+  for name, desc in data.items():
+
+    for k,v in db['characters'].items():
+      if v['name'] == name:
+        db['characters']['description'] = desc
+        break
+
 print('Start')
 
+#loadDescriptions()
 loadDatabase('sampledatabase.json')
 
 
