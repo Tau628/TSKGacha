@@ -19,6 +19,8 @@ app.register_blueprint(otherBP)
 app.register_blueprint(tradesBP)
 app.register_blueprint(imagesBP)
 
+db['characters']['104']['image'] = [{"url": "https://cdn.discordapp.com/attachments/846922804074643467/851621760985727046/Shantae.png", "portrait": (300,100,800,600)}]
+
 #Loads in database from JSON
 '''
 import json
