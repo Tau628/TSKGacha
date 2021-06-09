@@ -15,38 +15,39 @@ def serve_pil_image(pil_img):
     return send_file(img_io, mimetype='image/png')
 
 
-@imagesBP.route('/art/<charID>-<artID>.png')
-def characterArt(charID, artID):
-  #Blank canvas
-  img = Image.new('RGB', (1106, 1482))
-  
-  url = db['characters'][charID]['image'][int(artID)]['url']
-  
-  art = Image.open(requests.get(url, stream=True).raw)
-  border = Image.open("images/Nonplussed_Frame.png")
+@imagesBP.route('/art/<arttype>/<charID>-<artID>.png')
+def characterArt(arttype, charID, artID):
 
-  art = art.resize((1106, 1482))
-  img.paste(art, (0,0))
+  if arttype == 'regular':
+    size = (1106, 1482)
+  elif arttype == 'mini':
+    size = (742, 786)
+  else:
+    return
+
+  character = db['characters'][charID]
+  name = character['name']
+  rarity = character['rarity']
+  art = character['images'][int(artID)]
+  url = art['url']
+  crop = tuple(art['portrait'])
+
+  img = Image.new('RGB', size)
+  artwork = Image.open(requests.get(url, stream=True).raw)
+  border = Image.open(f"images/{arttype}_frames/rarity{rarity}.png")
+
+  if arttype == 'mini':
+    artwork = artwork.crop(crop)
+
+  artwork = artwork.resize(size)
+  img.paste(artwork, (0,0))
   img.paste(border, (0,0), mask=border)
-  title_font = ImageFont.truetype('comic.ttf', 100)
-  title_text = "Shantae"
-  draw = ImageDraw.Draw(img)
-  draw.text((450,1350), title_text, (0, 0, 0), font=title_font)
-
-  return serve_pil_image(img)
-
-@imagesBP.route('/art/mini/<charID>-<artID>.png')
-def characterArtMini(charID, artID):
-  img = Image.new('RGB', (742, 786))
-  url = db['characters'][charID]['image'][int(artID)]['url']
-  crop = tuple(db['characters'][charID]['image'][int(artID)]['portrait'])
-  art = Image.open(requests.get(url, stream=True).raw)
-  art = art.crop(tuple(crop))
-  border = Image.open("images/Nonplussed_mini.png")
-
-  art = art.resize((742, 786))
-  img.paste(art, (0,0))
-  img.paste(border, (0,0), mask=border)
+  
+  if arttype == 'regular':
+    title_font = ImageFont.truetype('comic.ttf', 100)
+    title_text = name
+    draw = ImageDraw.Draw(img)
+    draw.text((450,1350), title_text, (0, 0, 0), font=title_font)
 
   return serve_pil_image(img)
 

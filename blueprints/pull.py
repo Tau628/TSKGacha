@@ -96,16 +96,22 @@ def banners():
           new_char = pickChar(banner_name)
           db['players'][current_user.id]['pulled_character'] = new_char
 
+        #Deducting the cost of the banner
         db['players'][current_user.id]['coins'] -= cost
 
+        #Returns a page to show the user thier pull
         return render_template('pull/pulled.html', user = current_user, character = database.to_primitive(db['characters'][new_char]), chr_ind = new_char)
 
+    #Checks if the button was a character removal
     elif button == 'remove':
+      #Gets the character that's being removed
       removing = request.form.get('characterRemoving')
       if removing is not None:
         removing = removing.split('-')[1]
+        #If the character selected the one that was just pulled
         if removing == 'pulled':
           db['players'][current_user.id]['pulled_character'] = None
+        #If the character selected was already in thier roster
         else:
           removing = int(removing)
           db['players'][current_user.id]['roster'].pop(removing)

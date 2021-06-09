@@ -1,5 +1,4 @@
 from flask import Flask
-from replit import db
 
 from blueprints.players import playersBP
 from blueprints.characters import charactersBP
@@ -18,17 +17,6 @@ app.register_blueprint(pullBP)
 app.register_blueprint(otherBP)
 app.register_blueprint(tradesBP)
 app.register_blueprint(imagesBP)
-
-#Loads in database from JSON
-'''
-import json
-for k in db.keys():
-  del db[k]
-with open('./sampledatabase.json') as f:
-  data = json.load(f)
-for k, v in data.items():
-  db[k] = v
-'''
 
 if __name__ == '__main__':
   app.secret_key = 'super secret key'
