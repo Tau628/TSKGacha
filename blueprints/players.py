@@ -57,7 +57,7 @@ def player_page(ply_ind):
 def players():
   if current_user.is_authenticated:
     player_names = db['players'].keys()
-    return render_template('players/players.html', user = current_user, player_names = [(url_for('playersBP.player_page', ply_ind = name), name) for name in player_names])
+    return render_template('players/players.html', user = current_user, player_names = player_names)
   else:
     return redirect(url_for('otherBP.home'))
 

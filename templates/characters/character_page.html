@@ -15,6 +15,11 @@
 
 <img src="{{url_for('imagesBP.characterArt', arttype='regular', charID=chr_ind, artID=0)}}" height="500"></img>
 
+<h3>Wishlists</h3>
+{% for player in players_wished %}
+  <a href="{{ url_for('playersBP.player_page', ply_ind = player) }}"> {{ player }}</a><br>
+{% endfor %}
+
 <form method="POST">
   <button type="submit" class="btn btn-primary" name="submit_button" value="toggle-wishlist">{{'Remove from ' if in_wishlist else 'Add to '}}Wishlist</button>
 </form>

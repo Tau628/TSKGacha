@@ -1,5 +1,5 @@
 {% extends "base.html" %} {% block title %}Players{% endblock %} {% block content %}
-{% for url, name in player_names %}
-  <a href="{{ url }}"> {{ name }}</a><br>
+{% for name in player_names %}
+  <a href="{{ url_for('playersBP.player_page', ply_ind = name) }}"> {{ name }}</a><br>
 {% endfor %}
 {% endblock %}

@@ -34,9 +34,11 @@ def character_page(chr_ind):
   character = database.to_primitive(db['characters'][chr_ind])
   rarity = db['rarity_names'][str(character['rarity'])]
   rarity += " " + "☆"*character['rarity']
+  
   in_wishlist = chr_ind in db['players'][current_user.id]['wishlist']
+  players_wished = [pname for pname,player in db['players'].items() if chr_ind in player['wishlist']]
 
-  return render_template('characters/character_page.html', user = current_user, character = character, chr_ind = chr_ind, owner=owner, puller=puller, rarity = rarity, in_wishlist=in_wishlist)
+  return render_template('characters/character_page.html', user = current_user, character = character, chr_ind = chr_ind, owner=owner, puller=puller, rarity = rarity, in_wishlist=in_wishlist, players_wished=players_wished)
 
 @charactersBP.route('/')
 def characters():
