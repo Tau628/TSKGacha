@@ -52,6 +52,7 @@ def loadDescriptions():
 
 print('Start')
 
-saveDatabase('sample.json')
+#saveDatabase('sample.json')
+#db['characters']['113']['images'][0]['NSFW'] = True
 
 print('Done')

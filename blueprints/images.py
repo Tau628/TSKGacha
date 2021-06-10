@@ -18,11 +18,6 @@ def serve_pil_image(pil_img):
 @imagesBP.route('/art/<arttype>/<charID>-<artID>.png')
 def characterArt(arttype, charID, artID):
 
-  if current_user.is_authenticated:
-    print(current_user.id)
-  else:
-    print(None)
-
   if arttype == 'regular':
     size = (1106, 1482)
   elif arttype == 'mini':
@@ -37,10 +32,22 @@ def characterArt(arttype, charID, artID):
   art = character['images'][int(artID)]
   url = art['url']
   crop = art['portrait']
+  nsfw = art['NSFW']
+
+  if current_user.is_authenticated:
+    allow_nsfw = db['players'][current_user.id]['NSFW_shown']
+  else:
+    allow_nsfw = False
 
   #Gets all of the images that it's going to work with
   img = Image.new('RGB', size)
-  artwork = Image.open(requests.get(url, stream=True).raw)
+
+  if nsfw and not allow_nsfw:
+    artwork = Image.new('RGB', size)
+    crop = None
+  else:
+    artwork = Image.open(requests.get(url, stream=True).raw)
+    
   border = Image.open(f"images/{arttype}_frames/rarity{rarity}.png")
 
   #If it's a mini art, crop the image
