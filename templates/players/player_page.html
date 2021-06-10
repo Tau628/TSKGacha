@@ -12,6 +12,14 @@
   </a>
 {% endfor %}
 
+<h3>Wishlist:</h3>
+{% for i, char in wishlist_characters %}
+  <a href="{{url_for('charactersBP.character_page', chr_ind=i)}}">
+    <img src="{{url_for('imagesBP.characterArt', arttype='mini', charID=i, artID=0)}}" height="75"></img>
+  </a>
+{% endfor %}
+<br>
+
 {% if user.id == player[0] %}
   Last check in {{check_in}}.<br>
   <form method="POST">
