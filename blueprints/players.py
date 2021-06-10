@@ -33,9 +33,13 @@ def player_page(ply_ind):
   if current_user.is_authenticated:
     owned_characters = [(char_id, db['characters'][char_id]) for char_id in db['players'][ply_ind]['roster']]
 
-    print(url_for('imagesBP.characterArt', arttype='regular', charID=1, artID=0))
+    last_check_in = db['players'][current_user.id]['last_check_in']
+    check_in = datetime.datetime.utcfromtimestamp(last_check_in)
+    check_in = est.localize(check_in)
+    check_in_string = check_in.strftime("%a, %b %d, %Y %I:%M %Z%z")
+    #print(check_in.strftime("%Y-%m-%d %H:%M:%S %Z%z"))  
 
-    return render_template('players/player_page.html', user = current_user, player = (ply_ind, database.to_primitive(db['players'][ply_ind])), owned_characters = owned_characters)
+    return render_template('players/player_page.html', user = current_user, player = (ply_ind, database.to_primitive(db['players'][ply_ind])), owned_characters = owned_characters, check_in = check_in_string)
   else:
     return redirect(url_for('otherBP.home'))
 

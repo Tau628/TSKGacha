@@ -13,6 +13,7 @@
 {% endfor %}
 
 {% if user.id == player[0] %}
+  Last check in {{check_in}}.<br>
   <form method="POST">
     <button type="submit" {{'disabled' if False else ''}} class="btn btn-primary" name="submit_button" value="check-in">Claim Koins</button>
   </form>
