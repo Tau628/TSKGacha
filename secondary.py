@@ -52,7 +52,7 @@ def loadDescriptions():
 
 print('Start')
 
-#saveDatabase('sample.json')
-#db['characters']['113']['images'][0]['NSFW'] = True
+for p in db['players'].keys():
+  db['players'][p]['wishlist'] = []
 
 print('Done')

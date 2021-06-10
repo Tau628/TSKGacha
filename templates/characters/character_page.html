@@ -15,4 +15,8 @@
 
 <img src="{{url_for('imagesBP.characterArt', arttype='regular', charID=chr_ind, artID=0)}}" height="500"></img>
 
+<form method="POST">
+  <button type="submit" class="btn btn-primary" name="submit_button" value="toggle-wishlist">{{'Remove from ' if in_wishlist else 'Add to '}}Wishlist</button>
+</form>
+
 {% endblock %}
