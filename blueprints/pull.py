@@ -127,20 +127,29 @@ def banners():
           db['players'][current_user.id]['roster'].append(player['pulled_character'])
           db['players'][current_user.id]['pulled_character'] = None
 
+  #End of POST request logic
 
-
+  #Gets the current player
   player = db['players'][current_user.id]
-  
 
-  char_ids = database.to_primitive(player['roster']) 
-  characters = [(str(ri), db['characters'][ci]) for ri,ci in enumerate(char_ids)]
-  coins=player['coins']
-
-  #coin_strings = f"Pull: {coins}->{coins-cost}"
-
+  #Determines if the player is able to pull.
+  #If the player already has a character in their "pulled" slot,
+  #They must remove a character before they can pull again.
   can_pull = player['pulled_character'] is None
   if can_pull:
+    #Gets the number of coins the player has
+    coins=player['coins']
+
+    #Returns HTML template that displays the banners
     return render_template('pull/banners.html', user = current_user, coins=coins, banners = db['banners'])
+
   else:
+    #Gets the roster of the current player
+    char_ids = database.to_primitive(player['roster']) 
+    characters = [(str(ri), db['characters'][ci]) for ri,ci in enumerate(char_ids)]
+
+    #Gets the character that was pulled by the player
     pulled_char = (player['pulled_character'], db['characters'][player['pulled_character']])
+    
+    #Returns an HTML template that prompts the user to remove a character
     return render_template('pull/already_pulled.html', user = current_user, characters=characters, pulled_char = pulled_char)

@@ -2,19 +2,20 @@ from PIL import Image, ImageFont, ImageDraw
 import requests
 from io import BytesIO
 
-from flask import Blueprint, render_template, send_file#, redirect, url_for, request, flash
+from flask import Blueprint, render_template, send_file
 from flask_login import current_user
 from replit import db
 
 imagesBP = Blueprint('imagesBP', __name__)
 
+#Converts a PIL image object to something that Flask can serve.
 def serve_pil_image(pil_img):
     img_io = BytesIO()
     pil_img.save(img_io, 'PNG', quality=70)
     img_io.seek(0)
     return send_file(img_io, mimetype='image/png')
 
-
+#Generates artwork for a charater with titles and borders
 @imagesBP.route('/art/<arttype>/<charID>-<artID>.png')
 def characterArt(arttype, charID, artID):
 
@@ -33,7 +34,8 @@ def characterArt(arttype, charID, artID):
   url = art['url']
   crop = art['portrait']
   nsfw = art['NSFW']
-
+  
+  #Determines if NSFW art can be displayed
   if current_user.is_authenticated:
     allow_nsfw = db['players'][current_user.id]['NSFW_shown']
   else:
@@ -70,7 +72,3 @@ def characterArt(arttype, charID, artID):
     img = img.resize((100,100))
 
   return serve_pil_image(img)
-
-@imagesBP.route('/imageTesting')
-def imageTesting():
-  return render_template('imageTesting.html', user=current_user)
