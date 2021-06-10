@@ -18,6 +18,11 @@ def serve_pil_image(pil_img):
 @imagesBP.route('/art/<arttype>/<charID>-<artID>.png')
 def characterArt(arttype, charID, artID):
 
+  if current_user.is_authenticated:
+    print(current_user.id)
+  else:
+    print(None)
+
   if arttype == 'regular':
     size = (1106, 1482)
   elif arttype == 'mini':

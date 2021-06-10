@@ -48,7 +48,8 @@ def sign_up():
           'password': generate_password_hash(password1, method='sha256'),
           'roster': [],
           'pulled_character': None,
-          'last_check_in': int(time.time())
+          'last_check_in': int(time.time()),
+          'NSFW_shown': False
           }
         
         #Adds user to database

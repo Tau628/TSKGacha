@@ -15,20 +15,28 @@ est = pytz.timezone('US/Eastern')
 def player_page(ply_ind):
 
   if request.method == 'POST':
-    last_check_in = db['players'][current_user.id]['last_check_in']
-    now = int(time.time())
+    button = request.form.get('submit_button')
 
-    prev = datetime.datetime.utcfromtimestamp(last_check_in)
-    prev = est.localize(prev)
-    curr = datetime.datetime.utcfromtimestamp(now)
-    curr = est.localize(curr)
+    if button == 'check-in':
+      last_check_in = db['players'][current_user.id]['last_check_in']
+      now = int(time.time())
 
-    diff = (curr.date()-prev.date()).days
+      prev = datetime.datetime.utcfromtimestamp(last_check_in)
+      prev = est.localize(prev)
+      curr = datetime.datetime.utcfromtimestamp(now)
+      curr = est.localize(curr)
 
-    db['players'][current_user.id]['last_check_in'] = now
-    db['players'][current_user.id]['coins'] += diff
+      diff = (curr.date()-prev.date()).days
 
-    flash(f'You have redeemed {diff} Koins.', category='success')
+      db['players'][current_user.id]['last_check_in'] = now
+      db['players'][current_user.id]['coins'] += diff
+
+      flash(f'You have redeemed {diff} Koins.', category='success')
+    
+    elif button.split('-')[0] == 'NSFW':
+      toggle = button.split('-')[1] == 'on'
+      db['players'][current_user.id]['NSFW_shown'] = toggle
+      flash('Preferences updated. Please clear cache.', category='success')
 
   if current_user.is_authenticated:
     owned_characters = [(char_id, db['characters'][char_id]) for char_id in db['players'][ply_ind]['roster']]

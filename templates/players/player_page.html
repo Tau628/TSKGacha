@@ -15,7 +15,15 @@
 {% if user.id == player[0] %}
   Last check in {{check_in}}.<br>
   <form method="POST">
-    <button type="submit" {{'disabled' if False else ''}} class="btn btn-primary" name="submit_button" value="check-in">Claim Koins</button>
+    <button type="submit" class="btn btn-primary" name="submit_button" value="check-in">Claim Koins</button>
+  </form>
+  
+  <br>
+
+  <form method="POST">
+    NSFW Toggle<br>
+    <button type="submit" {{'disabled' if not player[1]['NSFW_shown'] else ''}} class="btn btn-primary" name="submit_button" value="NSFW-off">Hidden</button>
+    <button type="submit" {{'disabled' if player[1]['NSFW_shown'] else ''}} class="btn btn-primary" name="submit_button" value="NSFW-on">Shown</button>
   </form>
 {% endif %}
 {% endblock %}
