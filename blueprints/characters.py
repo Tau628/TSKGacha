@@ -4,24 +4,29 @@ from flask_login import current_user
 
 charactersBP = Blueprint('charactersBP', __name__, url_prefix='/characters')
 
-from .pull import getListOwnedChars
+from .pull import getOwnedChars,getPulledChars
 
 @charactersBP.route('/<chr_ind>')
 def character_page(chr_ind):
   if current_user.is_authenticated:
     
     #Determines if a characer is owned
-    owned = getListOwnedChars()
+    owned = getOwnedChars()
     if chr_ind in owned:
       owner = owned[chr_ind]
     else:
       owner = None
+    pulled = getPulledChars()
+    if chr_ind in pulled:
+      puller = pulled[chr_ind]
+    else:
+      puller = None
 
     character = database.to_primitive(db['characters'][chr_ind])
     rarity = db['rarity_names'][str(character['rarity'])]
     rarity += " " + "☆"*character['rarity']
 
-    return render_template('characters/character_page.html', user = current_user, character = character, chr_ind = chr_ind, owner=owner, rarity = rarity)
+    return render_template('characters/character_page.html', user = current_user, character = character, chr_ind = chr_ind, owner=owner, puller=puller, rarity = rarity)
   
   else:
     return redirect(url_for('otherBP.home'))

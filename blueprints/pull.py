@@ -7,11 +7,18 @@ pullBP = Blueprint('pullBP', __name__)
 
 #Generates a dictionary of owned characters
 #Keys are the character IDs; values are the users that own them
-def getListOwnedChars():
+def getOwnedChars():
   characters = {}
   for pname, p in db['players'].items():
     for cind in p['roster']:
       characters[cind] = pname
+  return characters
+
+def getPulledChars():
+  characters = {}
+  for pname, p in db['players'].items():
+    if p['pulled_character'] is not None:
+      characters[p['pulled_character']] = pname
   return characters
 
 #Function to randomly select a characters
@@ -24,7 +31,9 @@ def pickChar(banner_name=None):
     banner = db['banners'][banner_name]
 
   #Gets a list of all owned characters
-  owned_chars = getListOwnedChars().keys()
+  owned_chars = getOwnedChars().keys()
+  pulled_chars = getPulledChars().keys()
+  owned_chars = list(owned_chars) + list(pulled_chars)
   
   #Gets a list of characters filtering out the characters already owned
   viable_characters = {k:v for k,v in db['characters'].items() if k not in owned_chars}
@@ -69,7 +78,7 @@ def pickChar(banner_name=None):
 
 #Page with all the banners
 @pullBP.route('/banners', methods=['GET','POST'])
-def banners():  
+def banners():
   if request.method == 'POST':
     #Gets the info about the player and the button press
     player = db['players'][current_user.id]

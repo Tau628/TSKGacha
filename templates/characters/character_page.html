@@ -9,6 +9,9 @@
 {% if owner is not none %}
   Owned by <a href="{{ url_for('playersBP.player_page', ply_ind = owner) }}"> {{owner}}</a><br>
 {% endif %}
+{% if puller is not none %}
+  Pulled by <a href="{{ url_for('playersBP.player_page', ply_ind = puller) }}"> {{puller}}</a><br>
+{% endif %}
 
 <img src="{{url_for('imagesBP.characterArt', arttype='regular', charID=chr_ind, artID=0)}}" height="500"></img>
 
