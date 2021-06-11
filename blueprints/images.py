@@ -65,12 +65,11 @@ def characterArt(arttype, charID, artID):
   if arttype == 'regular':
     text_size = 100
     title_font = ImageFont.truetype('fonts/broadway.ttf', text_size)
-    print(title_font.getsize(name))
+    
     while(title_font.getsize(name)[0] > 530):
       text_size -= 5
       title_font = ImageFont.truetype('fonts/broadway.ttf', text_size)
 
-    print(title_font.getsize(name))
     title_text = name
     draw = ImageDraw.Draw(img)
     draw.text((450,1370+(95-title_font.getsize(name)[1])/2), title_text, (0, 0, 0), font=title_font)
