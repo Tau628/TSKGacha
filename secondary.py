@@ -52,7 +52,6 @@ def loadDescriptions():
 
 print('Start')
 
-for p in db['players'].keys():
-  db['players'][p]['NSFW_shown'] = False
+#loadDatabase('sampledatabase.json')
 
 print('Done')

@@ -275,7 +275,7 @@
             "description": "The embodiment of opulence and the most kingly king you'll ever meet. Too bad shiniest armor is no basis for a system of government.",
             "images": [
                 {
-                    "NSFW": false,
+                    "NSFW": true,
                     "portrait": null,
                     "url": "https://static.wikia.nocookie.net/shovelknight/images/e/e9/KingKnight-grand.png/revision/latest?cb=20170401175730"
                 }
@@ -2333,7 +2333,20 @@
         }
     },
     "players": {
+        "Froz'n Ape": {
+            "NSFW_shown": false,
+            "coins": 0,
+            "last_check_in": 1623340235,
+            "max_roster": 3,
+            "password": "sha256$g3NyLePl$5c393466ec4be7d6d428c334474cb431f7b32a98a98a15e60a1e5669e2486493",
+            "pulled_character": null,
+            "roster": [
+                "31"
+            ],
+            "wishlist": []
+        },
         "Nick": {
+            "NSFW_shown": false,
             "coins": 1,
             "last_check_in": 1623262121,
             "max_roster": 3,
@@ -2343,18 +2356,51 @@
                 "25",
                 "112",
                 "75"
+            ],
+            "wishlist": []
+        },
+        "SSBBM": {
+            "NSFW_shown": true,
+            "coins": 0,
+            "last_check_in": 1623333640,
+            "max_roster": 3,
+            "password": "sha256$9m2eq2ax$ee1b9a6451a8e075250669df9047108bf89d281adf09ff08140f19dad7485d55",
+            "pulled_character": null,
+            "roster": [
+                "102",
+                "148",
+                "141"
+            ],
+            "wishlist": [
+                "6"
             ]
         },
+        "sam": {
+            "NSFW_shown": true,
+            "coins": 0,
+            "last_check_in": 1623456781,
+            "max_roster": 3,
+            "password": "sha256$UGMold3E$5b1a7093ee7dda6e5284f70ad3996c81e9a8545162df393500df1ad968abf3ce",
+            "pulled_character": null,
+            "roster": [],
+            "wishlist": []
+        },
         "tau628": {
-            "coins": 1,
-            "last_check_in": 1623249919,
+            "NSFW_shown": false,
+            "coins": 12,
+            "last_check_in": 1623953759,
             "max_roster": 3,
             "password": "sha256$pwED5ogV$62b347e625ed7af623f71cf7972fe2b62097fe5f48d10bb68824ee11fd8f1556",
             "pulled_character": null,
             "roster": [
-                "33",
                 "113",
-                "41"
+                "68",
+                "103"
+            ],
+            "wishlist": [
+                "6",
+                "104",
+                "25"
             ]
         }
     },
@@ -2402,5 +2448,6 @@
             ],
             "status": "accepted"
         }
-    ]
+    ],
+    "expansion_costs" : [0,1,2,5,10]
 }

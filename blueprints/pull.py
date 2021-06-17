@@ -70,11 +70,29 @@ def pickChar(banner_name=None):
   
   #Picks character based on weighting function
   weight_function = eval(banner['weights'])
-  print(weight_function)
   c_weights = [weight_function(c) for cid,c in viable_characters.items()]
   c_weights = [w/sum(c_weights) for w in c_weights]
 
   return np.random.choice(list(viable_characters.keys()), p=c_weights)
+
+#A function to pull a character from a given banner
+#Returns the template for the chracter selected
+def pullChar(banner_name):
+  player = db['players'][current_user.id]
+  
+  #You don't a full roster
+  if player['max_roster'] > len(player['roster']):
+    new_char = pickChar(banner_name)
+    db['players'][current_user.id]['roster'].append(new_char)
+
+  #You do have a full roster
+  else:
+    new_char = pickChar(banner_name)
+    db['players'][current_user.id]['pulled_character'] = new_char
+
+  return render_template('pull/pulled.html', user = current_user, character = database.to_primitive(db['characters'][new_char]), chr_ind = new_char)
+
+
 
 #Page with all the banners
 @pullBP.route('/banners', methods=['GET','POST'])
@@ -92,24 +110,13 @@ def banners():
       #Checks if the player has enough coins
       if player['coins']-cost < 0:
         flash("You don't have enough coins.", category='error')
-
+      
       else:
-
-        #You don't a full roster
-        if player['max_roster'] > len(player['roster']):
-          new_char = pickChar(banner_name)
-          db['players'][current_user.id]['roster'].append(new_char)
-
-        #You do have a full roster
-        else:
-          new_char = pickChar(banner_name)
-          db['players'][current_user.id]['pulled_character'] = new_char
-
         #Deducting the cost of the banner
         db['players'][current_user.id]['coins'] -= cost
-
+        
         #Returns a page to show the user thier pull
-        return render_template('pull/pulled.html', user = current_user, character = database.to_primitive(db['characters'][new_char]), chr_ind = new_char)
+        return pullChar(banner_name)
 
     #Checks if the button was a character removal
     elif button == 'remove':
@@ -153,3 +160,4 @@ def banners():
     
     #Returns an HTML template that prompts the user to remove a character
     return render_template('pull/already_pulled.html', user = current_user, characters=characters, pulled_char = pulled_char)
+

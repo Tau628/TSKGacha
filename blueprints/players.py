@@ -9,6 +9,7 @@ from flask_login import current_user
 
 playersBP = Blueprint('playersBP', __name__, url_prefix='/players')
 
+from .pull import pullChar
 est = pytz.timezone('US/Eastern')
 
 #A player's main page
@@ -45,14 +46,32 @@ def player_page(ply_ind):
       db['players'][current_user.id]['NSFW_shown'] = toggle
       flash('Preferences updated. Please clear cache.', category='success')
 
+    elif button == 'expand-roster':
+      player = db['players'][ply_ind]
+      cost = db['expansion_costs'][player['max_roster']]
+      
+      if cost > player['coins']:
+        flash("You don't have enough coins.", category='error')
+      else:
+        #Deducting the cost of the banner and adding to their roster
+        db['players'][current_user.id]['max_roster'] += 1
+        db['players'][current_user.id]['coins'] -= cost
+        
+        #Returns a page to show the user thier pull
+        return pullChar(banner_name='base')
+      
+      print('expand dong',  cost)
+
   if current_user.is_authenticated:
 
+    player = db['players'][ply_ind]
+
     #Get a list of owned characters and wishlisted characters by the player
-    owned_characters = [(char_id, db['characters'][char_id]) for char_id in db['players'][ply_ind]['roster']]
-    wishlist_characters = [(char_id, db['characters'][char_id]) for char_id in db['players'][ply_ind]['wishlist']]
+    owned_characters = [(char_id, db['characters'][char_id]) for char_id in player['roster']]
+    wishlist_characters = [(char_id, db['characters'][char_id]) for char_id in player['wishlist']]
 
     #Gets the time that the player last checked in
-    last_check_in = db['players'][current_user.id]['last_check_in']
+    last_check_in = player['last_check_in']
     check_in = datetime.datetime.utcfromtimestamp(last_check_in)
     check_in = est.localize(check_in)
     check_in_string = check_in.strftime("%a, %b %d, %Y %I:%M %Z%z")

@@ -49,7 +49,8 @@ def sign_up():
           'roster': [],
           'pulled_character': None,
           'last_check_in': int(time.time()),
-          'NSFW_shown': False
+          'NSFW_shown': False,
+          'wishlist' : [],
           }
         
         #Adds user to database
