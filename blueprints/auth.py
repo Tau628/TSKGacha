@@ -43,8 +43,8 @@ def sign_up():
         #If none of these checks trigger, the information is valid
         #We now create a new user
         new_user = {
-          'coins': 0,
-          'max_roster': 3,
+          'coins': 3,
+          'max_roster': 0,
           'password': generate_password_hash(password1, method='sha256'),
           'roster': [],
           'pulled_character': None,

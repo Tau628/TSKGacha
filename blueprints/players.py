@@ -48,19 +48,22 @@ def player_page(ply_ind):
 
     elif button == 'expand-roster':
       player = db['players'][ply_ind]
-      cost = db['expansion_costs'][player['max_roster']]
-      
-      if cost > player['coins']:
-        flash("You don't have enough coins.", category='error')
+      roster_size = player['max_roster']
+
+      if roster_size >= len(db['expansion_costs']):
+        flash("You already have the max roster size.", category='error')
       else:
-        #Deducting the cost of the banner and adding to their roster
-        db['players'][current_user.id]['max_roster'] += 1
-        db['players'][current_user.id]['coins'] -= cost
+        cost = db['expansion_costs'][roster_size]
         
-        #Returns a page to show the user thier pull
-        return pullChar(banner_name='base')
-      
-      print('expand dong',  cost)
+        if cost > player['coins']:
+          flash("You don't have enough coins.", category='error')
+        else:
+          #Deducting the cost of the banner and adding to their roster
+          db['players'][current_user.id]['max_roster'] += 1
+          db['players'][current_user.id]['coins'] -= cost
+          
+          #Returns a page to show the user thier pull
+          return pullChar(banner_name='base')
 
   if current_user.is_authenticated:
 
