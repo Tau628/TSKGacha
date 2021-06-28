@@ -1,2 +1,2 @@
-# TSKGotcha
-The best gotcha game ever made by me
+# TSK Gacha
+The best gacha game ever made by me
